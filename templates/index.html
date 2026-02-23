@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>opentopo</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <style>
+        html, body { height: 100%; margin: 0; }
+        #map { height: 100%; width: 100%; }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        const map = L.map('map').setView([38.899, -106.9653],14)
+        L.tileLayer('https://tile.openmaps.fr/opentopomap/{z}/{x}/{y}.png', {minZoom:13, maxZoom:17}).addTo(map);
+        L.marker([38.889, -106.957091]).addTo(map).bindPopup(`
+            <div style="width:300px;">
+                <div style="display:flex;">
+                    <button onclick="switchTab('water')">Water</button>
+                    <button onclick="switchTab('air')">Air</button>
+                </div>
+
+                <div id="water-tab">
+                    <div style="font-weight:bold;">Valve #24</div>
+                    Status: <b style="color:red;">CLOSED</b><br>
+                    Pressure: 120 PSI
+                </div>
+
+                <div id="air-tab" style="display:none;">
+                    <div style="font-weight:bold;">Air Line #24</div>
+                    Status: <b style="color:green;">OPEN</b><br>
+                    Pressure: 120 PSI
+                </div>
+            </div>
+        `);
+        function switchTab(tab){
+            const water = document.getElementById("water-tab");
+            const air = document.getElementById("air-tab");
+            if(tab == "water"){
+                water.style.display = "block";
+                air.style.display = "none";
+            } else {
+                water.style.display = "none";
+                air.style.display = "block"
+            }
+        }
+    </script>
+</body>
+</html>
