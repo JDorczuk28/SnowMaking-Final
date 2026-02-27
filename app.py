@@ -6,7 +6,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///capstone.sqlite'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
-
+# hello
 class Valve(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100))
