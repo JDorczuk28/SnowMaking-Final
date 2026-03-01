@@ -27,6 +27,30 @@ class User(db.Model):
 def index():
     # If DB is empty, this list will be empty
     all_valves = Valve.query.all()
+    if not all_valves:
+        default_valves = [
+            {"name": "EAST RIVER PUMP HOUSE", "lat": 38.92212358356308, "lng": -106.95092218936132},
+            {"name": "FLEET MAINT SHOP", "lat": 38.9190267637674, "lng": -106.95764916955467},
+            {"name": "SNOWFLAKE CONTROL", "lat": 38.896496332211925, "lng": -106.94899842664006},
+            {"name": "GOLDLINK BOTTOM", "lat": 38.91370926731311, "lng": -106.95687669336209},
+            {"name": "SNOWMAX BUILDING", "lat": 38.90787525887946, "lng": -106.95371358438365},
+            {"name": "REDLADY VALVE", "lat": 38.89909708585354, "lng": -106.9652425436975},
+        ]
+        for v in default_valves:
+            existing = Valve.query.filter_by(name=v["name"]).first()
+
+            if not existing:
+                valve = Valve(
+                    name=v["name"],
+                    state="Open",
+                    note="",
+                    time="",
+                    lat=v["lat"],
+                    lng=v["lng"]
+                )
+                db.session.add(valve)
+        db.session.commit()
+        all_valves = Valve.query.all()
 
     valves_data = [ {"id": v.id, "name": v.name, "state": v.state, "note": v.note, "time": v.time, "lat": v.lat, "lng": v.lng} for v in all_valves]
 
