@@ -12,7 +12,7 @@
 const markerData = window.valveData
 
 function makeMarker({id,name, lat, lng, state, note}){
-    const mark = L.circleMarker([lat,lng], {radius: 20, fillColor: "red", color: "black", weight: 1, fillOpacity: 0.9}).addTo(map).bindTooltip(name, {direction: "top", offset:[0,15], className: "marker-title"})
+    const mark = L.circleMarker([lat,lng], {radius: 10, fillColor: "red", color: "black", weight: 1, fillOpacity: 0.9}).addTo(map).bindTooltip(name, {direction: "top", offset:[0,15], className: "marker-title"})
     mark.valve = { id, name, lat, lng, state, note };
     mark.bindPopup(buildHTML({id, name, lat, long: lng, state, note}))
     mark.on("popupopen", (e) => handlePopup(e.popup.getElement(), mark));
