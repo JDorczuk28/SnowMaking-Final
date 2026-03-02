@@ -1,5 +1,5 @@
-    const map = L.map('map').setView([38.903145122952374, -106.94432074959053],14)
-    L.tileLayer('https://tile.openmaps.fr/opentopomap/{z}/{x}/{y}.png', {minZoom:13, maxZoom:17}).addTo(map);
+const map = L.map('map').setView([38.903145122952374, -106.94432074959053],14)
+L.tileLayer('https://tile.openmaps.fr/opentopomap/{z}/{x}/{y}.png', {minZoom:13, maxZoom:17}).addTo(map);
 
 
 /*const markerData = [{ name: "EAST RIVER PUMP HOUSE", lat: 38.92212358356308, lng: -106.95092218936132},
@@ -19,6 +19,7 @@ function makeMarker({id,name, lat, lng, state, note}){
     return mark;
 }
 markerData.forEach(makeMarker)
+
 function buildHTML({id, name, lat, long, state= "", note = ""}){
     return `
     <div class="popup-wrap" data-id="${id}">
@@ -74,7 +75,7 @@ function buildHTML({id, name, lat, long, state= "", note = ""}){
                 <option>Dano</option>
                 <option>Desmond</option>
             </select>
-            
+        
         
             <label>Notes</label>
             <textarea class="notes" rows="3" placeholder="Notes....">${note ?? ""}</textarea>
@@ -92,8 +93,7 @@ function buildHTML({id, name, lat, long, state= "", note = ""}){
             <h4>History</h4>
             <div class="history-list"></div>
         </div>
-    </div>
-`
+    </div>`
 }
 function handlePopup(e, marker){
     const tabButtons = e.querySelectorAll(".tab-btn")
@@ -130,8 +130,6 @@ function handlePopup(e, marker){
         marker.valve.note = note;
         marker.setPopupContent(buildHTML({ ...marker.valve, long: marker.valve.lng }));
     })
-
-
 }
 
 // PUMP HOUSE water line to snowmax and base area
@@ -166,8 +164,6 @@ var latlngs2 = [
 ];
 
 var polyline2 = L.polyline(latlngs2, {color: 'red'}).addTo(map);
-
-
 
 // water line from snowflake to peanut
 var latlngs3 = [
