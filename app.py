@@ -22,6 +22,13 @@ class User(db.Model):
     name = db.Column(db.String(100))
     valves = db.relationship('Valve', backref='user')
 
+class History(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    valve_id = db.Column(db.Integer, db.ForeignKey('valve.id'))
+    state = db.Column(db.String(20))
+    note = db.Column(db.String(200))
+    time = db.Column(db.String(50))
+    user_name = db.Column(db.String(100))
 
 @app.route('/')
 def index():
@@ -66,10 +73,22 @@ def update_valve():
         valve.state = data.get('state')
         valve.note = data.get('note')
         valve.time = data.get('time')
+        history = History(valve_id=valve.id, state=valve.state, note=valve.note, time=valve.time, user_name=data.get('user_name'))
+        db.session.add(history)
         db.session.commit()
         return jsonify({"status": "updated"})
 
     return jsonify({"status": "error"}), 404
 
+@app.route('/valve_history/<int:valve_id>', methods=['GET'])
+def valve_history(valve_id=None):
+    rows = (History.query.filter_by(valve_id=valve_id).order_by(History.id.desc()).limit(5).all())
+    history = [{"time": r.time,"state": r.state,"note": r.note,"user": r.user_name} for r in rows]
+
+    return jsonify({"history": history})
+
+
+with app.app_context():
+    db.create_all()
 if __name__ == "__main__":
     app.run(debug=False)

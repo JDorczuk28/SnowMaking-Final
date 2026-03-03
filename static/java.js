@@ -1,24 +1,26 @@
-    const map = L.map('map').setView([38.903145122952374, -106.94432074959053],14)
-    L.tileLayer('https://tile.openmaps.fr/opentopomap/{z}/{x}/{y}.png', {minZoom:13, maxZoom:17}).addTo(map);
+const map = L.map('map').setView([38.903145122952374, -106.94432074959053],14)
+// set map, zoom limited so you cant scroll to far in or too far out.
+L.tileLayer('https://tile.openmaps.fr/opentopomap/{z}/{x}/{y}.png', {minZoom:14, maxZoom:18}).addTo(map);
 
-
-/*const markerData = [{ name: "EAST RIVER PUMP HOUSE", lat: 38.92212358356308, lng: -106.95092218936132},
-  { name: "FLEET MAINT SHOP",      lat: 38.9190267637674,  lng: -106.95764916955467},
-  { name: "SNOWFLAKE CONTROL",     lat: 38.896496332211925,lng: -106.94899842664006},
-  { name: "GOLDLINK BOTTOM",       lat: 38.91370926731311, lng: -106.95687669336209},
-  { name: "SNOWMAX BUILDING",      lat: 38.90787525887946, lng: -106.95371358438365,},
-  { name: "REDLADY VALVE",         lat: 38.89909708585354, lng: -106.9652425436975},]
-*/
+//uses valve data that was queried in html
 const markerData = window.valveData
 
+//function create markers, takes in needed paramaters needed to create html used in the bindPopup function
+//sets shape, color, radius and other parameters
 function makeMarker({id,name, lat, lng, state, note}){
     const mark = L.circleMarker([lat,lng], {radius: 10, fillColor: "red", color: "black", weight: 1, fillOpacity: 0.9}).addTo(map).bindTooltip(name, {direction: "top", offset:[0,15], className: "marker-title"})
-    mark.valve = { id, name, lat, lng, state, note };
+    //mark.valve = { id, name, lat, lng, state, note };
     mark.bindPopup(buildHTML({id, name, lat, long: lng, state, note}))
     mark.on("popupopen", (e) => handlePopup(e.popup.getElement(), mark));
     return mark;
 }
+//creates markers for every item in markerData (Every valve)
 markerData.forEach(makeMarker)
+
+//Follows template to build html for each valve
+//unique information is passed through parameters
+//creates 3 tabs to be used, air, water and history
+//
 function buildHTML({id, name, lat, long, state= "", note = ""}){
     return `
     <div class="popup-wrap" data-id="${id}">
@@ -95,40 +97,70 @@ function buildHTML({id, name, lat, long, state= "", note = ""}){
     </div>
 `
 }
+//function to handle tab behavior and button behavior
+//takes html DOM element (root element) and marker for the parameters
+
 function handlePopup(e, marker){
     const tabButtons = e.querySelectorAll(".tab-btn")
     const tabPanels = e.querySelectorAll(".tab-panel")
 
-    tabButtons.forEach(button => {button.addEventListener("click", function(){
+    //arrow functions used to attach click listeners then logic in asynchronous function (needed for await)
+    tabButtons.forEach(button => {button.addEventListener("click", async function () {
+        //decides what tab
         const tabName = this.dataset.tab;
+        //removes active class from all tabs and panels then makes clicked button active and makes matching panel active
         tabButtons.forEach(btn => btn.classList.remove("active"));
         tabPanels.forEach(panel => panel.classList.remove("active"));
         this.classList.add("active")
         const activePanel = e.querySelector(`.tab-panel[data-panel="${tabName}"]`);
-        if(activePanel){
+        if (activePanel) {
             activePanel.classList.add("active")
         }
-        })
+        //speical handling for history
+        //if history tab, gets data from history table based off ID, and lists history in html
+        if (tabName === "history") {
+            const id = Number(e.querySelector(".popup-wrap")?.dataset.id);
+            const listEl = e.querySelector(".history-list");
+            const res = await fetch(`/valve_history/${id}`);
+            const data = await res.json();
+            const history = data.history
+            listEl.innerHTML = history.map(h => `
+            <div class="hist">
+                <div><b>${h.state ?? ""}</b> — ${h.time ?? ""}</b></div>
+                ${h.user ? `<div>By: ${h.user}</div>` : ""}
+            </div>
+            `).join("")
+        }
     })
-
+    })
+    //controls save button and attachs click listener, uses async for fetch
     const save = e.querySelector(".save");
     save?.addEventListener("click", async () => {
         const wrap = e.querySelector(".popup-wrap")
         const id = Number(wrap?.dataset.id);
 
+        //pull status and notes from inside active tab, allows to work for all tabs
         const state = e.querySelector(".tab-panel.active .status-select")?.value;
         const note  = e.querySelector(".tab-panel.active .notes")?.value;
 
+        //data thats sent to server
         const postData = {
             id: id,
             state: state,
             note: note,
             time: new Date().toLocaleString()
         }
+        //sends http request to flask in JSON form, stores response (doesnt matter not used but should be)
         const res = await fetch('/update_valve', {method: 'POST', headers: { "Content-Type": "application/json"}, body: JSON.stringify(postData)})
+        //update marker states
         marker.valve.state = state;
         marker.valve.note = note;
+        //rebuilds html to reflect saved value, if it changes, re gets root element and re runs function attach buttons again
         marker.setPopupContent(buildHTML({ ...marker.valve, long: marker.valve.lng }));
+        const newEl = marker.getPopup()?.getElement();
+        if(newEl){
+            handlePopup(newEl, marker)
+        }
     })
 
 

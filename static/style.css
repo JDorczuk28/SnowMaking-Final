@@ -80,7 +80,3 @@ html, body {
 }
 .tab-panel { display: none; }
 .tab-panel.active { display: block; }
-.coords {
-    font-size: 12px;
-    color: #555;
-}
