@@ -1,19 +1,19 @@
-/* Ensure the browser allows full height */
+
 html, body {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Prevents accidental scrollbars */
+    overflow: hidden;
 }
 
-/* Make the map container fill the screen */
+
 #map {
     height: 100vh;
     width: 100vw;
 }
 
-/* Your existing popup styles */
+
 .popup-box {
     width: 200px;
     font-family: sans-serif;
