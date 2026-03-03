@@ -27,7 +27,7 @@ class User(db.Model):
 def index():
     # If DB is empty, this list will be empty
     all_valves = Valve.query.all()
-    if not all_valves:
+    if all_valves:
         default_valves = [
             {"name": "EAST RIVER PUMP HOUSE", "lat": 38.92212358356308, "lng": -106.95092218936132},
             {"name": "FLEET MAINT SHOP", "lat": 38.9190267637674, "lng": -106.95764916955467},
@@ -35,6 +35,14 @@ def index():
             {"name": "GOLDLINK BOTTOM", "lat": 38.91370926731311, "lng": -106.95687669336209},
             {"name": "SNOWMAX BUILDING", "lat": 38.90787525887946, "lng": -106.95371358438365},
             {"name": "REDLADY VALVE", "lat": 38.89909708585354, "lng": -106.9652425436975},
+            {"name": "KOCHS VALVE", "lat": 38.89256926622391, "lng": -106.95114788764425},
+            {"name": "UPPER PARK VALVE", "lat": 38.896233119744714, "lng": -106.94945905780628},
+            {"name": "PEANUT VALVE", "lat": 38.89710727433946,  "lng":  -106.948932563278},
+            {"name": "KEYSTONE VALVE", "lat": 38.89647897681207, "lng": -106.94804922245835},
+            {"name": "PEANUT DRAIN", "lat": 38.89655182318709, "lng":  -106.94958190652956},
+            {"name": "UPPER PARK DRAIN", "lat": 38.89606921456027, "lng":  -106.94883896425077},
+            {"name": "WESTWALL TOP", "lat": 38.89592945669731, "lng": -106.96032443341286},
+            {"name": "PEACHTREE JUNCTION TOP", "lat": 38.896553440624764, "lng": -106.96412431021668},
         ]
         for v in default_valves:
             existing = Valve.query.filter_by(name=v["name"]).first()
