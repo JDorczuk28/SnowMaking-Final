@@ -1,5 +1,5 @@
 const map = L.map('map').setView([38.903145122952374, -106.94432074959053],14)
-L.tileLayer('https://tile.openmaps.fr/opentopomap/{z}/{x}/{y}.png', {minZoom:13, maxZoom:17}).addTo(map);
+L.tileLayer('https://tile.openmaps.fr/opentopomap/{z}/{x}/{y}.png', {minZoom:15, maxZoom:18}).addTo(map);
 
 
 /*const markerData = [{ name: "EAST RIVER PUMP HOUSE", lat: 38.92212358356308, lng: -106.95092218936132},
@@ -131,45 +131,3 @@ function handlePopup(e, marker){
         marker.setPopupContent(buildHTML({ ...marker.valve, long: marker.valve.lng }));
     })
 }
-
-// PUMP HOUSE water line to snowmax and base area
-var latlngs = [
-    [38.92212358356308, -106.95092218936132],
-    [38.92007018178994, -106.94974201739856],
-    [38.91934396445631, -106.95403355181423],
-    [38.9190267637674, -106.95764916955467],
-    [38.917691166312, -106.956941066375390],
-    [38.917649428488104, -106.95697325288347],
-    [38.91583798327965, -106.95792811928969],
-    [38.91370926731311, -106.95687669336209],
-    [38.90787525887946, -106.95371358438365],
-    [38.902888805097945, -106.95398784576206],
-    [38.89981252008462, -106.96205130495868],
-    [38.89906642426362, -106.96529507436509]
-
-];
-
-var polyline = L.polyline(latlngs, {color: 'blue'}).addTo(map);
-
-//AIR LINE from snowflake to base area
-var latlngs2 = [
-    [38.89653608222876, -106.94893806634154],
-    [38.89706728486381, -106.94883127504416],
-    [38.89744309929405, -106.94939773323028],
-    [38.89659300941321, -106.95050768830124],
-    [38.89670543922974, -106.95283217083325],
-    [38.89856561579149, -106.95423736648704],
-    [38.89934237839511, -106.96365349063436],
-    [38.89909708585354, -106.9652425436975]
-];
-
-var polyline2 = L.polyline(latlngs2, {color: 'red'}).addTo(map);
-
-// water line from snowflake to peanut
-var latlngs3 = [
-    [38.89653608222876, -106.94893806634154],
-    [38.89699501262998, -106.94848304255267],
-    [38.897529825418594, -106.9492955850328]
-];
-
-var polyline3 = L.polyline(latlngs3, {color: 'blue'}).addTo(map);
