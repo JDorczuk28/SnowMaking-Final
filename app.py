@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 
+
 app = Flask(__name__, static_url_path='/static')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///capstone.sqlite'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -21,6 +22,7 @@ class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100))
     valves = db.relationship('Valve', backref='user')
+
 
 class History(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -75,13 +77,19 @@ def index():
 @app.route('/update_valve', methods=['POST'])
 def update_valve():
     data = request.get_json()
-    valve = Valve.query.get(data.get('id'))
+    valve = db.session.get(Valve, data.get('id'))
 
     if valve:
         valve.state = data.get('state')
         valve.note = data.get('note')
         valve.time = data.get('time')
-        history = History(valve_id=valve.id, state=valve.state, note=valve.note, time=valve.time, user_name=data.get('user_name'))
+        selected_user = data.get('user')
+        history = History(
+            valve_id=valve.id,
+            state=valve.state,
+            note=valve.note,
+            time=valve.time,
+            user_name=selected_user)
         db.session.add(history)
         db.session.commit()
         return jsonify({"status": "updated"})
