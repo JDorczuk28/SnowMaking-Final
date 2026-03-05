@@ -11,7 +11,10 @@ db = SQLAlchemy(app)
 class Valve(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100))
-    state = db.Column(db.String(20))
+
+    water_state = db.Column(db.String(20))
+    air_state = db.Column(db.String(20))
+
     note = db.Column(db.String(200))
     time = db.Column(db.String(50))
     lat = db.Column(db.Float)
@@ -28,6 +31,7 @@ class History(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     valve_id = db.Column(db.Integer, db.ForeignKey('valve.id'))
     state = db.Column(db.String(20))
+    type = db.Column(db.String(20))
     note = db.Column(db.String(200))
     time = db.Column(db.String(50))
     user_name = db.Column(db.String(100))
@@ -36,7 +40,7 @@ class History(db.Model):
 def index():
     # If DB is empty, this list will be empty
     all_valves = Valve.query.all()
-    if all_valves:
+    if not all_valves:
         default_valves = [
             {"name": "EAST RIVER PUMP HOUSE", "lat": 38.92212358356308, "lng": -106.95092218936132},
             {"name": "FLEET MAINT SHOP", "lat": 38.9190267637674, "lng": -106.95764916955467},
@@ -59,7 +63,8 @@ def index():
             if not existing:
                 valve = Valve(
                     name=v["name"],
-                    state="Open",
+                    water_state="Open",
+                    air_state="Open",
                     note="",
                     time="",
                     lat=v["lat"],
@@ -69,7 +74,7 @@ def index():
         db.session.commit()
         all_valves = Valve.query.all()
 
-    valves_data = [ {"id": v.id, "name": v.name, "state": v.state, "note": v.note, "time": v.time, "lat": v.lat, "lng": v.lng} for v in all_valves]
+    valves_data = [ {"id": v.id, "name": v.name, "water_state": v.water_state, "air_state": v.air_state, "note": v.note, "time": v.time, "lat": v.lat, "lng": v.lng} for v in all_valves]
 
     return render_template('index.html', valves=valves_data)
 
@@ -80,17 +85,30 @@ def update_valve():
     valve = db.session.get(Valve, data.get('id'))
 
     if valve:
-        valve.state = data.get('state')
         valve.note = data.get('note')
         valve.time = data.get('time')
         selected_user = data.get('user')
-        history = History(
-            valve_id=valve.id,
-            state=valve.state,
-            note=valve.note,
-            time=valve.time,
-            user_name=selected_user)
-        db.session.add(history)
+        valve_type = data.get('type')
+        saved_state = data.get("state")
+
+        changed = False
+        if valve_type == "water":
+            if valve.water_state != saved_state:
+                valve.water_state = saved_state
+                changed = True
+        elif valve_type == "air":
+            if valve.air_state != saved_state:
+                valve.air_state = saved_state
+                changed = True
+        if changed:
+            history = History(
+                valve_id=valve.id,
+                state=saved_state,
+                type=valve_type,
+                note=valve.note,
+                time=valve.time,
+                user_name=selected_user)
+            db.session.add(history)
         db.session.commit()
         return jsonify({"status": "updated"})
 
@@ -99,7 +117,7 @@ def update_valve():
 @app.route('/valve_history/<int:valve_id>', methods=['GET'])
 def valve_history(valve_id=None):
     rows = (History.query.filter_by(valve_id=valve_id).order_by(History.id.desc()).limit(5).all())
-    history = [{"time": r.time,"state": r.state,"note": r.note,"user": r.user_name} for r in rows]
+    history = [{"time": r.time,"type": r.type, "state": r.state,"note": r.note,"user": r.user_name} for r in rows]
 
     return jsonify({"history": history})
 

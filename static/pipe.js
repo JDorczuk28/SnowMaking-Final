@@ -1,3 +1,7 @@
+// GET THE PIPES BELOW THE BUTTONS
+map.createPane("pipes")
+map.getPane("pipes").style.zIndex = 390
+
 // PUMP HOUSE water line to snowmax and base area
 var latlngs = [
     [38.92212358356308, -106.95092218936132],
@@ -15,7 +19,7 @@ var latlngs = [
 
 ];
 
-var polyline = L.polyline(latlngs, {color: 'blue'}).addTo(map);
+var polyline = L.polyline(latlngs, {color: 'blue', pane:"pipes"}).addTo(map);
 
 
 //Air line from goldlink to base area
@@ -32,7 +36,7 @@ var latlngs4 = [
     [38.89914842426362, -106.96519097436509]
 ];
 
-var polyline4 = L.polyline(latlngs4, {color: 'red'}).addTo(map);
+var polyline4 = L.polyline(latlngs4, {color: 'red', pane:"pipes"}).addTo(map);
 
 
 //AIR LINE from snowflake to base area
@@ -45,7 +49,7 @@ var latlngs2 = [
 
 ];
 
-var polyline2 = L.polyline(latlngs2, {color: 'red'}).addTo(map);
+var polyline2 = L.polyline(latlngs2, {color: 'red', pane:"pipes"}).addTo(map);
 
 
 
@@ -60,7 +64,7 @@ var latlngs3 = [
 
 ];
 
-var polyline3 = L.polyline(latlngs3, {color: 'blue'}).addTo(map);
+var polyline3 = L.polyline(latlngs3, {color: 'blue', pane:"pipes"}).addTo(map);
 
 
 
@@ -77,7 +81,7 @@ var latlngs5 = [
     [38.891218229934005, -106.94871930564888]
 ];
 
-var polyline3 = L.polyline(latlngs5, {color: 'blue'}).addTo(map);
+var polyline3 = L.polyline(latlngs5, {color: 'blue', pane:"pipes"}).addTo(map);
 
 
 var latlngs6 = [
@@ -92,7 +96,7 @@ var latlngs6 = [
     [38.891302729934005, -106.94861520564888]
 ];
 
-var polyline6 = L.polyline(latlngs6, {color: 'red'}).addTo(map);
+var polyline6 = L.polyline(latlngs6, {color: 'red', pane:"pipes"}).addTo(map);
 
 //base area to westwall top of list is below redlady silverqueen bottom terminal
 var latlngs7 = [
@@ -107,7 +111,7 @@ var latlngs7 = [
     [38.89582712868711, -106.9602988662659]
 ];
 
-var polyline7 = L.polyline(latlngs7, {color: 'red'}).addTo(map);
+var polyline7 = L.polyline(latlngs7, {color: 'red', pane:"pipes"}).addTo(map);
 
 
 //snowmax to bottom of prospect
@@ -118,7 +122,7 @@ var latlngs8 = [
     [38.914198350542215, -106.9492625056408],
 ];
 
-var polyline8 = L.polyline(latlngs8, {color: 'red'}).addTo(map);
+var polyline8 = L.polyline(latlngs8, {color: 'red', pane:"pipes"}).addTo(map);
 
 //
 var latlngs8 = [
@@ -147,7 +151,7 @@ var latlngs8 = [
 
 ];
 
-var polyline8 = L.polyline(latlngs8, {color: 'red'}).addTo(map);
+var polyline8 = L.polyline(latlngs8, {color: 'red', pane:"pipes"}).addTo(map);
 
 
 var latlngs8 = [
@@ -166,4 +170,4 @@ var latlngs8 = [
     [38.89921435638689, -106.94250453337868]
 ];
 
-var polyline8 = L.polyline(latlngs8, {color: 'red'}).addTo(map);
+var polyline8 = L.polyline(latlngs8, {color: 'red', pane:"pipes"}).addTo(map);
