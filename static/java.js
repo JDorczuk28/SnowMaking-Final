@@ -5,6 +5,7 @@ L.tileLayer('https://tile.openmaps.fr/opentopomap/{z}/{x}/{y}.png', {minZoom:13,
 //gets valve data from database
 const markerData = window.valveData
 
+
 //function create markers, takes in needed paramaters needed to create html used in the bindPopup function
 //sets shape, color, radius and other parameters
 function makeMarker({id,name, lat, lng, water_state, air_state, note}){
@@ -16,6 +17,7 @@ function makeMarker({id,name, lat, lng, water_state, air_state, note}){
 }
 //creates markers for every item in markerData (Every valve)
 markerData.forEach(makeMarker)
+
 
 //Follows template to build html for each valve
 //unique information is passed through parameters
@@ -119,17 +121,7 @@ function handlePopup(e, marker){
         //speical handling for history
         //if history tab, gets data from history table based off ID, and lists history in html
         if (tabName === "history") {
-            const id = Number(e.querySelector(".popup-wrap")?.dataset.id);
-            const listEl = e.querySelector(".history-list");
-            const res = await fetch(`/valve_history/${id}`);
-            const data = await res.json();
-            const history = data.history
-            listEl.innerHTML = history.map(h => `
-            <div class="hist">
-                <b>${(h.type ?? "unknown").toUpperCase()}</b> — <b>${h.state ?? ""}</b> — ${h.time ?? ""}
-                ${h.user ? `<div>By: ${h.user}</div>` : ""}
-            </div>
-            `).join("")
+            History(e)
         }
     })
     })
@@ -163,11 +155,32 @@ function handlePopup(e, marker){
         marker.valve.note = note;
         //rebuilds html to reflect saved value, if it changes, re gets root element and re runs function attach buttons again
         marker.setPopupContent(buildHTML({ ...marker.valve, long: marker.valve.lng }));
-        const newEl = marker.getPopup()?.getElement();
+        const newEl = marker.getPopup()?.getElement()
         if(newEl){
             handlePopup(newEl, marker)
         }
     })})
+
+    // History Function
+    // Async function (needed for await), takes in html root element as parameter and finds history list
+    // fetches need info from history database
+    // updates innerHTML to display history
+    async function History(e){
+        const id = Number(e.querySelector(".popup-wrap").dataset.id)
+        const listEl = e.querySelector(".history-list")
+        const res = await fetch(`/valve_history/${id}`)
+        const data = await res.json()
+        const history = data.history
+        listEl.innerHTML = history.map(h => `
+            <div class="hist">
+                <b>${h.type.toUpperCase()} - ${h.state} - ${h.time} - by: ${h.user}</b>
+            </div>`).join("")
+
+
+
+
+
+    }
 
 
 }
