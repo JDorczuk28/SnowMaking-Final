@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 
 app = Flask(__name__, static_url_path='/static')
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///capstone.sqlite'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///capstone1.sqlite'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
@@ -82,7 +82,9 @@ def index():
 @app.route('/update_valve', methods=['POST'])
 def update_valve():
     data = request.get_json()
+    print("DATA:", data)
     valve = db.session.get(Valve, data.get('id'))
+    print("Valve:", valve)
 
     if valve:
         valve.note = data.get('note')
@@ -100,6 +102,9 @@ def update_valve():
             if valve.air_state != saved_state:
                 valve.air_state = saved_state
                 changed = True
+
+        print("changed:", changed)
+
         if changed:
             history = History(
                 valve_id=valve.id,
@@ -109,7 +114,14 @@ def update_valve():
                 time=valve.time,
                 user_name=selected_user)
             db.session.add(history)
+            print("history added to session")
         db.session.commit()
+        print("commit done")
+
+        rows = History.query.all()
+        print("history count:", len(rows))
+        for r in rows:
+            print(r.id, r.valve_id, r.type, r.state, r.time, r.user_name)
         return jsonify({"status": "updated"})
 
     return jsonify({"status": "error"}), 404
