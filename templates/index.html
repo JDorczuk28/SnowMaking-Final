@@ -1,14 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Valve Map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <div id="map"></div>
-    
+
+   <div class="login-container">
+    {% if current_user.is_authenticated %}
+        <span class="user-name">User: {{ current_user.name }}</span>
+
+        {% if current_user.is_admin %}
+            <a href="{{ url_for('manage_users') }}" class="admin-link">Admin Panel</a>
+        {% endif %}
+
+        <a href="{{ url_for('logout') }}" class="login-btn">Logout</a>
+    {% else %}
+        <a href="{{ url_for('login') }}" class="login-btn">Login</a>
+    {% endif %}
+    </div>
+
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
     <script>
         window.valveData = {{ valves | tojson }};
     </script>
-    <script src="{{ url_for('static', filename='current.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='java.js') }}"></script>
+    <script src="{{ url_for('static', filename='pipe.js') }}"></script>
 </body>
+</html>

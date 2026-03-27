@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Users</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='manage_style.css') }}">
+</head>
+<body class="centered-body">
+
+    <div class="management-card">
+        <h2>User Management</h2>
+
+        <div class="form-section">
+            <form action="{{ url_for('create_user') }}" method="POST">
+                <input type="text" name="name" placeholder="New Username" required>
+                <input type="password" name="password" placeholder="New Password" required>
+                <div class="admin-checkbox">
+                    <input type="checkbox" name="is_admin" id="is_admin">
+                    <label for="is_admin">Admin Permissions</label>
+                </div>
+                <button type="submit" class="submit-btn">Add User</button>
+            </form>
+        </div>
+
+        <hr class="divider">
+
+        <table class="user-table">
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Role</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                <tr>
+                    <td>{{ user.name }}</td>
+                    <td><span class="role-tag">{{ "Admin" if user.is_admin else "Operator" }}</span></td>
+                    <td>
+                        {% if user.id != current_user.id %}
+                        <form action="{{ url_for('delete_user', user_id=user.id) }}" method="POST">
+                            <button type="submit" class="delete-btn">Delete</button>
+                        </form>
+                        {% else %}
+                            <span class="current-user-tag">You</span>
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <a href="{{ url_for('index') }}" class="back-link">← Return to Map</a>
+    </div>
+
+</body>
+</html>
