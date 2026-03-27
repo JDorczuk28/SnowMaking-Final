@@ -5,11 +5,27 @@
 </head>
 <body>
     <div id="map"></div>
-    
+
+    <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- valve data -->
     <script>
         window.valveData = {{ valves | tojson }};
     </script>
-    <script src="{{ url_for('static', filename='java.js') }}"></script>
+    <!-- JS Files -->
+    <script src="{{ url_for('static', filename='load_map.js') }}"></script>
+    <script src="{{ url_for('static', filename='valves.js') }}"></script>
+    <script src="{{ url_for('static', filename='valve_cluster.js') }}"></script>
     <script src="{{ url_for('static', filename='pipe.js') }}"></script>
+    <script src="{{ url_for('static', filename='history.js') }}"></script>
+
+    <!-- HTML Elements -->
+    <button id="history_Button" onclick="getHistory()">History</button>
+
+    <div id="history-Panel" class="history-Panel">
+        <button class="dropbtn" onclick="valveDropdown()"></button>
+        <div id="History-List"></div>
+    </div>
+
+
 </body>
