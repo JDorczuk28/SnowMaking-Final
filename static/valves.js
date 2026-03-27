@@ -155,17 +155,21 @@ function handlePopup(e, marker){
         marker.valve.note = note;
         //rebuilds html to reflect saved value, if it changes, re gets root element and re runs function attach buttons again
         if(marker.options && marker.options.cluster){
-            marker.setPopupcontent(buildClusterHtml({valves: marker.options.cluster}))
+            console.log("Hello")
+            marker.setPopupContent(buildClusterHtml({valves: marker.options.cluster}))
+            console.log("Hello2")
             const newEl = marker.getPopup().getElement()
-            if(newEl){
+            if(newEl) {
                 handleClusterPopup(newEl, marker)
+            }
         }else{
-            marker.setPopupcontent(buildHTML({...marker.valve, long: marker.valve.lng}))
-            const newEl = marker.getPopup.getElement()
+            console.log("Hello3")
+            marker.setPopupContent(buildHTML({...marker.valve, long: marker.valve.lng}))
+            console.log("Hello4")
+            const newEl = marker.getPopup().getElement()
             if(newEl){
                 handlePopup(newEl, marker)
             }
-        }
         }
     })})
 }
