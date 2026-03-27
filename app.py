@@ -55,7 +55,6 @@ def index():
             {"name": "UPPER PARK DRAIN", "lat": 38.89606921456027, "lng":  -106.94883896425077, "cluster": 1},
             {"name": "WESTWALL TOP", "lat": 38.89592945669731, "lng": -106.96032443341286},
             {"name": "PEACHTREE JUNCTION TOP", "lat": 38.896553440624764, "lng": -106.96412431021668},
-            {"name": "TEST", "lat": 38.912478, "lng": -106.96524}
         ]
         for v in default_valves:
             existing = Valve.query.filter_by(name=v["name"]).first()
