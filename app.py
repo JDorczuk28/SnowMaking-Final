@@ -44,6 +44,15 @@ class History(db.Model):
     time = db.Column(db.String(50))
     user_name = db.Column(db.String(100))
 
+class History(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    valve_id = db.Column(db.Integer, db.ForeignKey('valve.id'))
+    state = db.Column(db.String(20))
+    type = db.Column(db.String(20))
+    note = db.Column(db.String(200))
+    time = db.Column(db.String(50))
+    user_name = db.Column(db.String(100))
+
 @app.route('/')
 def index():
     # If DB is empty, this list will be empty
