@@ -1,4 +1,7 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Valve Map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
@@ -6,20 +9,33 @@
 <body>
     <div id="map"></div>
 
-    <!-- Leaflet JS -->
+   <div class="login-container">
+    {% if current_user.is_authenticated %}
+        <span class="user-name">User: {{ current_user.name }}</span>
+
+        {% if current_user.is_admin %}
+            <a href="{{ url_for('manage_users') }}" class="admin-link">Admin Panel</a>
+        {% endif %}
+
+        <a href="{{ url_for('logout') }}" class="login-btn">Logout</a>
+    {% else %}
+        <a href="{{ url_for('login') }}" class="login-btn">Login</a>
+    {% endif %}
+    </div>
+
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <!-- valve data -->
+
     <script>
         window.valveData = {{ valves | tojson }};
     </script>
-    <!-- JS Files -->
+
     <script src="{{ url_for('static', filename='load_map.js') }}"></script>
     <script src="{{ url_for('static', filename='valves.js') }}"></script>
     <script src="{{ url_for('static', filename='valve_cluster.js') }}"></script>
     <script src="{{ url_for('static', filename='pipe.js') }}"></script>
     <script src="{{ url_for('static', filename='history.js') }}"></script>
 
-    <!-- HTML Elements -->
+
     <button id="history_Button" onclick="getHistory()">History</button>
 
     <div id="history-Panel" class="history-Panel">
@@ -27,5 +43,38 @@
         <div id="History-List"></div>
     </div>
 
-
+    <div id="map-legend" style="
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-size: 13px;
+    line-height: 1.6;
+">
+    <strong style="display: block; margin-bottom: 5px; border-bottom: 1px solid #eee;">Valve Status</strong>
+    <div style="display: flex; align-items: center; gap: 8px;">
+        <span style="height: 12px; width: 12px; background-color: #2ecc71; border-radius: 50%; display: inline-block; border: 1px solid white;"></span>
+        <span>Open (Water or Air)</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 8px;">
+        <span style="height: 12px; width: 12px; background-color: #f39c12; border-radius: 50%; display: inline-block; border: 1px solid white;"></span>
+        <span>Cracked (Water)</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 8px;">
+        <span style="height: 12px; width: 12px; background-color: #e74c3c; border-radius: 50%; display: inline-block; border: 1px solid white;"></span>
+        <span>Closed (All)</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 8px;">
+        <span style="height: 12px; width: 12px; background-color: #3498db; border-radius: 50%; display: inline-block; border: 1px solid white;"></span>
+        <span>Group / Cluster</span>
+    </div>
+</div>
+</div>
 </body>
+</html>

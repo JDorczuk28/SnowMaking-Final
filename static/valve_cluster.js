@@ -22,6 +22,7 @@ function buildClusterHtml(cluster) {
             <div class="cluster-container">${panels}</div>
         </div>`
 }
+
 //tab switching logic for parent tabs (valve tabs) same logic as in handlePopup()
 //sends to handlePopup() once tab is selected
 //builds for first in tabPanels by default

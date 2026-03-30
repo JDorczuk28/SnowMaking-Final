@@ -15,6 +15,4 @@ async function getHistory(){
     panel.style.display = "block"
     console.log(historyList)
 
-
 }
-

@@ -1,203 +1,246 @@
-//gets valve data from database
-const markerData = window.valveData
-const standaloneValves = markerData.filter(v => v.cluster == 0)
-console.log(standaloneValves)
+/**
+ * valves.js - FINAL VERSION
+ */
 
-//function create markers, takes in needed paramaters needed to create html used in the bindPopup function
-//sets shape, color, radius and other parameters
-function makeMarker({id,name, lat, lng, water_state, air_state, note, valves}, cluster_check=false){
-    const mark = L.circleMarker([lat,lng], {radius: 10, fillColor: "red", color: "black", weight: 1, fillOpacity: 0.9}).addTo(map).bindTooltip(name, {direction: "top", offset:[0,15], className: "marker-title"})
+// --- 1. DATA INITIALIZATION ---
+const markerData = window.valveData;
+
+// Filter for valves
+const standaloneValves = markerData.filter(v => v.cluster === 0 || v.cluster === null);
+const clusterIds = [...new Set(markerData.map(v => v.cluster))].filter(id => id > 0);
+
+// --- 2. MARKER GENERATION ---
+
+function makeMarker(data, isCluster = false) {
+    const { id, name, lat, lng, water_state, air_state, note, valves } = data;
+
+    if (lat === undefined || lng === undefined) return null;
+
+    const stateColors = {
+        "Open": "#2ecc71",
+        "Closed": "#e74c3c",
+        "Cracked": "#f39c12"
+    };
+
+    let markerColor = "grey";
+    if (isCluster) {
+        markerColor = "#3498db";
+    } else if (water_state === "Open" || air_state === "Open") {
+        markerColor = stateColors["Open"];
+    } else if (water_state === "Cracked") {
+        markerColor = stateColors["Cracked"];
+    } else {
+        markerColor = stateColors["Closed"];
+    }
+
+    // Create the marker
+    const mark = L.circleMarker([lat, lng], {
+        radius: isCluster ? 14 : 10,
+        fillColor: markerColor,
+        color: "white",
+        weight: 2,
+        fillOpacity: 1.0,
+        interactive: true // CRITICAL: Ensures the marker reacts to clicks
+    }).addTo(map);
+
+    // Bind Tooltip (Hover text)
+    mark.bindTooltip(name, {
+        direction: "top",
+        offset: [0, -10],
+        className: "marker-title"
+    });
+
+    // Attach data to marker object
     mark.valve = { id, name, lat, lng, water_state, air_state, note };
-    if(cluster_check === true){
-        mark.options.cluster = valves
-        mark.bindPopup(buildClusterHtml({valves}))
+
+    // Bind Popups based on type
+    if (isCluster && valves) {
+        mark.options.cluster = valves;
+        mark.bindPopup(buildClusterHtml({ valves }));
         mark.on("popupopen", (e) => handleClusterPopup(e.popup.getElement(), mark));
-    }
-    else{
-        mark.bindPopup(buildHTML({id, name, lat, long: lng, water_state, air_state, note}))
+    } else {
+        mark.bindPopup(buildHTML({ id, name, lat, long: lng, water_state, air_state, note }));
         mark.on("popupopen", (e) => handlePopup(e.popup.getElement(), mark));
-
     }
+
     return mark;
+} // <--- CLOSED PROPERLY NOW
+
+// --- 3. DRAWING COMMANDS ---
+
+// We wrap this in a check to ensure 'map' exists
+if (typeof map !== 'undefined') {
+    standaloneValves.forEach(v => makeMarker(v, false));
+
+    clusterIds.forEach(id => {
+        const valvesInThisCluster = markerData.filter(v => v.cluster === id);
+        if (valvesInThisCluster.length > 0) {
+            makeMarker({
+                ...valvesInThisCluster[0],
+                valves: valvesInThisCluster,
+                name: `Group: ${valvesInThisCluster[0].name.split(' ')[0]} Area`
+            }, true);
+        }
+    });
+} else {
+    console.error("Leaflet 'map' object not found. Make sure map is initialized before valves.js runs.");
 }
-//creates markers for every item in markerData (Every valve)
-standaloneValves.forEach(makeMarker)
 
+// --- 4. HTML BUILDERS ---
 
-//Follows template to build html for each valve
-//unique information is passed through parameters
-//creates 3 tabs to be used, air, water and history
-//
-function buildHTML({id, name, lat, long, water_state= "", air_state= "", note = ""}){
+function buildHTML({ id, name, lat, long, water_state = "", air_state = "", note = "" }) {
     return `
-    <div class="popup-wrap" data-id="${id}">
-        <div style="font-weight:bold;margin-bottom:6px;">${name}</div>
-        <div class="tab-bar">
+    <div class="popup-wrap" data-id="${id}" style="min-width: 200px;">
+        <div style="font-weight:bold;margin-bottom:6px;border-bottom:1px solid #eee;">${name}</div>
+        <div class="tab-bar" style="display:flex; gap:5px; margin-bottom:10px;">
             <button class="tab-btn active" data-tab="water">Water</button>
             <button class="tab-btn" data-tab="air">Air</button>
-            <button class="tab-btn" data-tab="history">History</button>
+            <button class="tab-btn" data-tab="history">Hist</button>
         </div>
-        
+
         <div class="tab-panel active" data-panel="water">
-            <h4>Water</h4>
             <label>Status</label>
-            <select class="status-select">
-                <option value="Open" ${water_state==="Open"?"selected":""}>Open</option>
-                <option value="Closed" ${water_state==="Closed"?"selected":""}>Closed</option>
-                <option value="Cracked" ${water_state==="Cracked"?"selected":""}>Cracked</option>
-            </select><br>
-            
-            <label>Updated by</label>
-            <select class="name-select">
-                <option value="">Select name…</option>
-                <option>Jack</option>
-                <option>Dano</option>
-                <option>Desmond</option>
-            </select><br>
-     
-            <label>Notes</label>
-            <textarea class="notes" rows="3" placeholder="Notes....">${note ?? ""}</textarea>
-            <div class="save-row">
-                <button class="save">Save</button>
-                <div class="coords">
-                    <span class="lat">${lat},</span>
-                    <span class="long">${long}</span>
-                </div>
-            </div>
-            <div class="msg"></div>
+            <select class="status-select" style="width:100%">${["Open", "Closed", "Cracked"].map(s => `<option value="${s}" ${water_state===s?'selected':''}>${s}</option>`).join('')}</select>
+            <textarea class="notes" placeholder="Notes..." style="width:100%; margin-top:5px;">${note ?? ""}</textarea>
+            <button class="save" style="width:100%; margin-top:5px; background:#2ecc71; color:white; border:none; padding:5px;">Save</button>
         </div>
-        
-        <div class="tab-panel" data-panel="air">
-            <h4>Air</h4>
-            <label>Status</label>
-            <select class="status-select">
-                <option value="Open" ${air_state==="Open"?"selected":""}>Open</option>
-                <option value="Closed" ${air_state==="Closed"?"selected":""}>Closed</option>
-                <option value="Cracked" ${air_state==="Cracked"?"selected":""}>Cracked</option>
-            </select><br>
 
-            <label>Updated by</label>
-            <select class="name-select">
-                <option value="">Select name…</option>
-                <option>Jack</option>
-                <option>Dano</option>
-                <option>Desmond</option>
-            </select><br>
-            
-        
-            <label>Notes</label>
-            <textarea class="notes" rows="3" placeholder="Notes....">${note ?? ""}</textarea>
-            <div class="save-row">
-                <button class="save">Save</button>
-                <div class="coords">
-                    <span class="lat">${lat},</span>
-                    <span class="long">${long}</span>
-                </div>
-            </div>
-            <div class="msg"></div>
-            
+        <div class="tab-panel" data-panel="air" style="display:none;">
+            <label>Air Status</label>
+            <select class="status-select" style="width:100%"><option value="Open" ${air_state==='Open'?'selected':''}>Open</option><option value="Closed" ${air_state==='Closed'?'selected':''}>Closed</option></select>
+            <button class="save" style="width:100%; margin-top:5px; background:#2ecc71; color:white; border:none; padding:5px;">Save</button>
         </div>
-        <div class="tab-panel" data-panel="history">
-            <h4>History</h4>
-            <div class="history-list"></div>
+
+        <div class="tab-panel" data-panel="history" style="display:none;">
+            <div class="history-list" style="max-height:100px; overflow-y:auto; font-size:0.8em;">Loading...</div>
         </div>
-    </div>
-`
+    </div>`;
 }
-//function to handle tab behavior and button behavior
-//takes html DOM element (root element) and marker for the parameters
 
-function handlePopup(e, marker){
-    console.log("hello")
-    const tabButtons = e.querySelectorAll(".tab-btn")
-    const tabPanels = e.querySelectorAll(".tab-panel")
+function buildClusterHtml({ valves }) {
+    const options = valves.map((v, i) => `<option value="${i}">${v.name}</option>`).join("");
+    const panels = valves.map((v, i) =>
+        `<div class="cluster-panel" data-panel="${i}" style="display:${i === 0 ? 'block' : 'none'};">
+            ${buildHTML({ ...v, long: v.lng })}
+        </div>`
+    ).join("");
 
-    //arrow functions used to attach click listeners then logic in asynchronous function (needed for await)
-    tabButtons.forEach(button => {button.addEventListener("click", async function () {
-        //decides what tab
-        const tabName = this.dataset.tab;
-        //sends to switchTab function to switch tab
-        switchTab(e, tabName);
-        //speical handling for history
-        //if history tab, gets data from history table based off ID, and lists history in html
-        if (tabName === "history") {
-            History(e)
-        }
-    })
-    })
-    //controls save button and attachs click listener, uses async for fetch
-    e.querySelectorAll(".save").forEach((btn) => {btn.addEventListener("click", async() => {
-        const wrap = e.querySelector(".popup-wrap")
-        const id = Number(wrap?.dataset.id);
+    return `
+        <div class="cluster-wrap" style="width:220px;">
+            <select class="cluster-dropdown" style="width:100%; margin-bottom:10px;">${options}</select>
+            <div class="cluster-container">${panels}</div>
+        </div>`;
+}
 
-        //pull status and notes from inside active tab, allows to work for all tabs
-        const type = e.querySelector(".tab-panel.active")?.dataset.panel;
-        const state = e.querySelector(".tab-panel.active .status-select")?.value;
-        const note  = e.querySelector(".tab-panel.active .notes")?.value;
-        const user = e.querySelector(".tab-panel.active .name-select")?.value;
-        //data thats sent to server
-        const postData = {
-            id: id,
-            state: state,
-            note: note,
-            time: new Date().toLocaleString(),
-            user: user,
-            type: type
-        }
-        //sends http request to flask in JSON form, stores response (doesnt matter not used but should be)
-        const res = await fetch('/update_valve', {method: 'POST', headers: { "Content-Type": "application/json"}, body: JSON.stringify(postData)})
-        //update marker states
-        if(type === "water"){
-            marker.valve.water_state = state
-        }else if(type === "air"){
-            marker.valve.air_state = state
-        }
-        marker.valve.note = note;
-        //rebuilds html to reflect saved value, if it changes, re gets root element and re runs function attach buttons again
-        if(marker.options && marker.options.cluster){
-            console.log("Hello")
-            marker.setPopupContent(buildClusterHtml({valves: marker.options.cluster}))
-            console.log("Hello2")
-            const newEl = marker.getPopup().getElement()
-            if(newEl) {
-                handleClusterPopup(newEl, marker)
+// --- 5. EVENT HANDLERS ---
+function handlePopup(e, marker) {
+    // 1. Tab switching logic
+    e.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.addEventListener("click", function() {
+            e.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+            e.querySelectorAll(".tab-panel").forEach(p => p.style.display = "none");
+
+            this.classList.add("active");
+            const target = e.querySelector(`.tab-panel[data-panel="${this.dataset.tab}"]`);
+            target.style.display = "block";
+
+            if (this.dataset.tab === "history") fetchHistory(e);
+        });
+    });
+
+    // 2. Save functionality with Priority Color Logic
+    e.querySelectorAll(".save").forEach(btn => {
+        btn.addEventListener("click", async () => {
+            const wrap = e.closest(".popup-wrap") || e.querySelector(".popup-wrap");
+            const panel = btn.closest(".tab-panel");
+
+            const postData = {
+                id: Number(wrap.dataset.id),
+                state: panel.querySelector(".status-select").value,
+                note: panel.querySelector(".notes")?.value || "",
+                type: panel.dataset.panel, // "water" or "air"
+                time: new Date().toLocaleString(),
+                user: "Staff"
+            };
+
+            // Send update to Database
+            await fetch('/update_valve', {
+                method: 'POST',
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(postData)
+            });
+
+            // Update the local data object for THIS marker
+            if (postData.type === "water") {
+                marker.valve.water_state = postData.state;
+            } else {
+                marker.valve.air_state = postData.state;
             }
-        }else{
-            console.log("Hello3")
-            marker.setPopupContent(buildHTML({...marker.valve, long: marker.valve.lng}))
-            console.log("Hello4")
-            const newEl = marker.getPopup().getElement()
-            if(newEl){
-                handlePopup(newEl, marker)
+            marker.valve.note = postData.note;
+
+            // --- PRIORITY COLOR LOGIC ---
+            const stateColors = {
+                "Open": "#2ecc71",   // Green
+                "Closed": "#e74c3c", // Red
+                "Cracked": "#f39c12" // Orange
+            };
+
+            let newColor = "grey";
+
+            // Check if it's a cluster first
+            if (marker.options && marker.options.cluster) {
+                newColor = "#3498db";
             }
-        }
-    })})
+            // Priority 1: Is Water OR Air Open? -> Green
+            else if (marker.valve.water_state === "Open" || marker.valve.air_state === "Open") {
+                newColor = stateColors["Open"];
+            }
+            // Priority 2: Is Water Cracked? -> Orange
+            else if (marker.valve.water_state === "Cracked") {
+                newColor = stateColors["Cracked"];
+            }
+            // Priority 3: Everything else -> Red
+            else {
+                newColor = stateColors["Closed"];
+            }
+
+            // Apply the new color to the map marker instantly
+            marker.setStyle({ fillColor: newColor });
+
+            alert(`${marker.valve.name} Updated!`);
+        });
+    });
 }
 
-// History Function
-// Async function (needed for await), takes in html root element as parameter and finds history list
-// fetches need info from history database
-// updates innerHTML to display history
-async function History(e){
-        const id = Number(e.querySelector(".popup-wrap").dataset.id)
-        const listEl = e.querySelector(".history-list")
-        const res = await fetch(`/valve_history/${id}`)
-        const data = await res.json()
-        const history = data.history
-        listEl.innerHTML = history.map(h => `
-            <div class="hist">
-                <b>${h.type.toUpperCase()} - ${h.state} - ${h.time} - by: ${h.user}</b>
-            </div>`).join("")
+function handleClusterPopup(e, marker) {
+    const dropdown = e.querySelector(".cluster-dropdown");
+    const tabPanels = e.querySelectorAll(".cluster-panel");
+
+    dropdown.addEventListener("change", (event) => {
+        const selectedIndex = event.target.value;
+        tabPanels.forEach((panel, i) => {
+            panel.style.display = (i == selectedIndex) ? "block" : "none";
+            if (i == selectedIndex && !panel.dataset.ready) {
+                handlePopup(panel, marker);
+                panel.dataset.ready = "true";
+            }
+        });
+    });
+
+    if (tabPanels[0] && !tabPanels[0].dataset.ready) {
+        handlePopup(tabPanels[0], marker);
+        tabPanels[0].dataset.ready = "true";
+    }
 }
 
-//Function to switch tabs, takes in html root element and tab name as parameters
-//Removes active class from all tabs and panels, adds active class to the tab and panel that matches the tab name
-function switchTab(e, tabName){
-    const tabButtons = e.querySelectorAll(".tab-btn")
-    const tabPanels = e.querySelectorAll(".tab-panel")
-    tabButtons.forEach(button => button.classList.remove("active"));
-    tabPanels.forEach(panel => panel.classList.remove("active"));
-    e.querySelector(`.tab-btn[data-tab="${tabName}"]`).classList.add("active")
-    e.querySelector(`.tab-panel[data-panel="${tabName}"]`).classList.add("active")
-}
+async function fetchHistory(e) {
+    const wrap = e.closest(".popup-wrap") || e.querySelector(".popup-wrap");
+    const id = Number(wrap.dataset.id);
+    const listEl = e.querySelector(".history-list");
 
+    const res = await fetch(`/valve_history/${id}`);
+    const data = await res.json();
+    listEl.innerHTML = data.history.length ? data.history.map(h =>
+        `<div style="border-bottom:1px solid #eee;"><b>${h.state}</b><br><small>${h.time}</small></div>`
+    ).join("") : "No history.";
+}
