@@ -29,7 +29,52 @@
         window.valveData = {{ valves | tojson }};
     </script>
 
-    <script src="{{ url_for('static', filename='java.js') }}"></script>
+    <script src="{{ url_for('static', filename='load_map.js') }}"></script>
+    <script src="{{ url_for('static', filename='valves.js') }}"></script>
+    <script src="{{ url_for('static', filename='valve_cluster.js') }}"></script>
     <script src="{{ url_for('static', filename='pipe.js') }}"></script>
+    <script src="{{ url_for('static', filename='history.js') }}"></script>
+
+
+    <button id="history_Button" onclick="getHistory()">History</button>
+
+    <div id="history-Panel" class="history-Panel">
+        <button class="dropbtn" onclick="valveDropdown()"></button>
+        <div id="History-List"></div>
+    </div>
+
+    <div id="map-legend" style="
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-size: 13px;
+    line-height: 1.6;
+">
+    <strong style="display: block; margin-bottom: 5px; border-bottom: 1px solid #eee;">Valve Status</strong>
+    <div style="display: flex; align-items: center; gap: 8px;">
+        <span style="height: 12px; width: 12px; background-color: #2ecc71; border-radius: 50%; display: inline-block; border: 1px solid white;"></span>
+        <span>Open (Water or Air)</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 8px;">
+        <span style="height: 12px; width: 12px; background-color: #f39c12; border-radius: 50%; display: inline-block; border: 1px solid white;"></span>
+        <span>Cracked (Water)</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 8px;">
+        <span style="height: 12px; width: 12px; background-color: #e74c3c; border-radius: 50%; display: inline-block; border: 1px solid white;"></span>
+        <span>Closed (All)</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 8px;">
+        <span style="height: 12px; width: 12px; background-color: #3498db; border-radius: 50%; display: inline-block; border: 1px solid white;"></span>
+        <span>Group / Cluster</span>
+    </div>
+</div>
+</div>
 </body>
 </html>

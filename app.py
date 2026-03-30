@@ -24,6 +24,8 @@ class Valve(db.Model):
     time = db.Column(db.String(50))
     lat = db.Column(db.Float)
     lng = db.Column(db.Float)
+    cluster =db.Column(db.Integer)
+
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
 
 class User(db.Model, UserMixin):
@@ -48,13 +50,13 @@ def index():
     all_valves = Valve.query.all()
     if not all_valves:
         default_valves = [
-            {"name": "Primary Pumphouse", "lat": 38.92212304235683, "lng": -106.9512133554679, "alt": 2762.369402266106},
-            {"name": "Pond/Pit Isolation Valve", "lat": 38.92215477817986, "lng": -106.9510905399406,"alt": 2762.426209372418},
-            {"name": "Manifold Drain", "lat": 38.92211155200594, "lng": -106.951103079818, "alt": 2762.405989856616},
-            {"name": "Pumphouse Drain", "lat": 38.92211546335712, "lng": -106.9511228864435, "alt": 2762.687158021773},
-            {"name": "Supply Line Drain", "lat": 38.92210118694455, "lng": -106.9511652589825,"alt": 2762.608162943292},
-            {"name": "Primary Instrument Air Condensate Drain", "lat": 38.92215458532085, "lng": -106.9511573144119,"alt": 2762.22377794831},
-            {"name": "Backup Instrument Air Condensate Drain", "lat": 38.92214509296524, "lng": -106.9511348940024,"alt": 2762.292098952913},
+            {"name": "Primary Pumphouse", "lat": 38.92212304235683, "lng": -106.9512133554679, "alt": 2762.369402266106, "cluster": 5},
+            {"name": "Pond/Pit Isolation Valve", "lat": 38.92215477817986, "lng": -106.9510905399406,"alt": 2762.426209372418, "cluster": 5},
+            {"name": "Manifold Drain", "lat": 38.92211155200594, "lng": -106.951103079818, "alt": 2762.405989856616, "cluster": 5},
+            {"name": "Pumphouse Drain", "lat": 38.92211546335712, "lng": -106.9511228864435, "alt": 2762.687158021773, "cluster": 5},
+            {"name": "Supply Line Drain", "lat": 38.92210118694455, "lng": -106.9511652589825,"alt": 2762.608162943292, "cluster": 5},
+            {"name": "Primary Instrument Air Condensate Drain", "lat": 38.92215458532085, "lng": -106.9511573144119,"alt": 2762.22377794831, "cluster": 5},
+            {"name": "Backup Instrument Air Condensate Drain", "lat": 38.92214509296524, "lng": -106.9511348940024,"alt": 2762.292098952913, "cluster": 5},
             {"name": "Shop Line Low Spot Drain at Indian Trail", "lat": 38.91895854601444, "lng": -106.957582917884,"alt": 2909.870245635975},
             {"name": "Supply Line Low Spot Drain at Indian Trail", "lat": 38.91962383225256, "lng": -106.9558829995864,"alt": 2884.325986115478},
             {"name": "Old Supply Line Drain at Indian Trail", "lat": 38.91961943050097, "lng": -106.9558808986738,"alt": 2884.277518494453},
@@ -73,26 +75,26 @@ def index():
             {"name": "Prospect Air Drain", "lat": 38.9142140094575, "lng": -106.9491603697095,"alt": 2932.160012852028},
             {"name": "Splain's Terrain Park Spur Water Isolation Valve", "lat": 38.90735862474448,"lng": -106.9529750502346, "alt": 3087.407964582344},
             {"name": "Old Supply Line Water Isolation Valve", "lat": 38.90265318034756, "lng": -106.9540745775514, "alt": 2992.174209413867},
-            {"name": "Supply Line Water Low Spot Drain Bottom Of Painter Boy", "lat": 38.90234489370604,"lng": -106.9540139706316, "alt": 2992.122141559981},
+            {"namfe": "Supply Line Water Low Spot Drain Bottom Of Painter Boy", "lat": 38.90234489370604,"lng": -106.9540139706316, "alt": 2992.122141559981, "cluster": 3},
             {"name": "Lower Canaan Air Isolation Valve", "lat": 38.89593739449698, "lng": -106.9528197598721,"alt": 3084.624397696893},
             {"name": "Lower Canaan Air Drain", "lat": 38.90008518929765, "lng": -106.9380239643444,"alt": 3046.619086111072},
 
-            {"name": "Houston Water Drain", "lat": 38.902458, "lng": -106.954059, "alt": 2991.28},
-            {"name": "12 Water Up Houston Isolation Valve", "lat": 38.902460, "lng": -106.954062, "alt": 2991.28},
+            {"name": "Houston Water Drain", "lat": 38.902458, "lng": -106.954059, "alt": 2991.28, "cluster": 3},
+            {"name": "12 Water Up Houston Isolation Valve", "lat": 38.902460, "lng": -106.954062, "alt": 2991.28, "cluster": 3},
             {"name": "Houston Road Spur Water Drain", "lat": 38.902216, "lng": -106.955425, "alt": 2983.74},
             {"name": "Houston Road Spur Air Drain", "lat": 38.902212, "lng": -106.955426, "alt": 2983.78},
-            {"name": "Houston Spur Air Isolation Valve", "lat": 38.902436, "lng": -106.954072, "alt": 2991.27},
-            {"name": "Houston Spur Water Isolation Valve", "lat": 38.902451, "lng": -106.954101, "alt": 2991.27},
-            {"name": "Houston Spur Low Spot Drain at Water Isolation", "lat": 38.902450, "lng": -106.954092,"alt": 2991.28},
-            {"name": "Houston Spur Air Low Spot Drain At Isolation", "lat": 38.902432, "lng": -106.954070,"alt": 2991.28},
+            {"name": "Houston Spur Air Isolation Valve", "lat": 38.902436, "lng": -106.954072, "alt": 2991.27, "cluster": 3},
+            {"name": "Houston Spur Water Isolation Valve", "lat": 38.902451, "lng": -106.954101, "alt": 2991.27, "cluster": 3},
+            {"name": "Houston Spur Low Spot Drain at Water Isolation", "lat": 38.902450, "lng": -106.954092,"alt": 2991.28, "cluster": 3},
+            {"name": "Houston Spur Air Low Spot Drain At Isolation", "lat": 38.902432, "lng": -106.954070,"alt": 2991.28, "cluster": 3},
 
-            {"name": "Springbox Flats Valve Block House", "lat": 38.898733, "lng": -106.952770, "alt": 3041.89},
-            {"name": "Spring Box Water Low Spot Drain", "lat": 38.898737, "lng": -106.952802, "alt": 3041.60},
-            {"name": "Springbox Air Low Spot Drain", "lat": 38.898741, "lng": -106.952805, "alt": 3041.66},
-            {"name": "Air Down Keystone Isolation Valve", "lat": 38.898741, "lng": -106.952797, "alt": 3041.75},
-            {"name": "Gold Link Air Isolation", "lat": 38.898741, "lng": -106.952784, "alt": 3041.88},
-            {"name": "Water Down Keystone Isolation Valve", "lat": 38.898735, "lng": -106.952797, "alt": 3041.63},
-            {"name": "Water Up Keystone Isolation Valve", "lat": 38.898730, "lng": -106.952761, "alt": 3041.98},
+            {"name": "Springbox Flats Valve Block House", "lat": 38.898733, "lng": -106.952770, "alt": 3041.89, "cluster": 6},
+            {"name": "Spring Box Water Low Spot Drain", "lat": 38.898737, "lng": -106.952802, "alt": 3041.60, "cluster": 6},
+            {"name": "Springbox Air Low Spot Drain", "lat": 38.898741, "lng": -106.952805, "alt": 3041.66, "cluster": 6},
+            {"name": "Air Down Keystone Isolation Valve", "lat": 38.898741, "lng": -106.952797, "alt": 3041.75, "cluster": 6},
+            {"name": "Gold Link Air Isolation", "lat": 38.898741, "lng": -106.952784, "alt": 3041.88, "cluster": 6},
+            {"name": "Water Down Keystone Isolation Valve", "lat": 38.898735, "lng": -106.952797, "alt": 3041.63, "cluster": 6},
+            {"name": "Water Up Keystone Isolation Valve", "lat": 38.898730, "lng": -106.952761, "alt": 3041.98, "cluster": 6},
 
             {"name": "Warming House Hill Water Isolation", "lat": 38.899310, "lng": -106.962264, "alt": 2906.29},
             {"name": "Warming House Hill Air Isolation", "lat": 38.899316, "lng": -106.962272, "alt": 2906.20},
@@ -120,7 +122,7 @@ def index():
             {"name": "Koch's Water", "lat": 38.894193, "lng": -106.954757, "alt": 3090.82},
             {"name": "Koch's Air", "lat": 38.894194, "lng": -106.954752, "alt": 3090.89},
 
-            {"name": "Peanut Low Spot Water Drain", "lat": 38.896193, "lng": -106.951251, "alt": 3107.43},
+            {"name": "Peanut Low Spot Water Drain", "lat": 38.896193, "lng": -106.951251, "alt": 3107.43, },
 
             {"name": "Lower Twister Water Isolation Valve", "lat": 38.896059, "lng": -106.951917, "alt": 3105.50},
             {"name": "Lower Twister Air Isolation Valve", "lat": 38.896064, "lng": -106.951932, "alt": 3105.19},
@@ -155,44 +157,44 @@ def index():
             {"name": "Ruby Steep Air Isolation", "lat": 38.892769, "lng": -106.941880, "alt": 3263.56},
             {"name": "Ruby Steep Water Isolation", "lat": 38.892767, "lng": -106.941886, "alt": 3263.66},
 
-            {"name": "East River Water Isolation", "lat": 38.896368, "lng": -106.941714, "alt": 3145.04},
-            {"name": "East River Water LSD at Isolation", "lat": 38.896361, "lng": -106.941722, "alt": 3145.22},
-            {"name": "East River Air Isolation", "lat": 38.896358, "lng": -106.941695, "alt": 3145.05},
+            {"name": "East River Water Isolation", "lat": 38.896368, "lng": -106.941714, "alt": 3145.04, "cluster": 2},
+            {"name": "East River Water LSD at Isolation", "lat": 38.896361, "lng": -106.941722, "alt": 3145.22, "cluster": 2},
+            {"name": "East River Air Isolation", "lat": 38.896358, "lng": -106.941695, "alt": 3145.05, "cluster": 2},
 
-            {"name": "Lower Forest Queen Air Isolation", "lat": 38.896419, "lng": -106.941749, "alt": 3144.43},
-            {"name": "Lower Forest Queen Water Isolation", "lat": 38.896442, "lng": -106.941724, "alt": 3143.83},
+            {"name": "Lower Forest Queen Air Isolation", "lat": 38.896419, "lng": -106.941749, "alt": 3144.43, "cluster": 2},
+            {"name": "Lower Forest Queen Water Isolation", "lat": 38.896442, "lng": -106.941724, "alt": 3143.83, "cluster": 2},
             {"name": "Lower Forest Queen LSD at Isolation", "lat": 38.896419, "lng": -106.941749, "alt": 3144.43},
 
-            {"name": "Upper Paradise Air Isolation", "lat": 38.896395, "lng": -106.941757, "alt": 3144.91},
-            {"name": "Upper Paradise Air LSD at Isolation", "lat": 38.896401, "lng": -106.941773, "alt": 3144.92},
+            {"name": "Upper Paradise Air Isolation", "lat": 38.896395, "lng": -106.941757, "alt": 3144.91, "cluster": 2},
+            {"name": "Upper Paradise Air LSD at Isolation", "lat": 38.896401, "lng": -106.941773, "alt": 3144.92, "cluster": 2},
 
-            {"name": "Low Pressure Water Drain", "lat": 38.896363, "lng": -106.941781, "alt": 3145.69},
-            {"name": "High Pressure Water Drain", "lat": 38.896375, "lng": -106.941791, "alt": 3145.65},
+            {"name": "Low Pressure Water Drain", "lat": 38.896363, "lng": -106.941781, "alt": 3145.69, "cluster": 2},
+            {"name": "High Pressure Water Drain", "lat": 38.896375, "lng": -106.941791, "alt": 3145.65, "cluster": 2},
 
-            {"name": "Water Down Ruby Isolation", "lat": 38.899247, "lng": -106.942420, "alt": 3119.19},
-            {"name": "Air Down Ruby Isolation", "lat": 38.899225, "lng": -106.942404, "alt": 3119.30},
-            {"name": "Ruby Isolation Low Spot Drain", "lat": 38.899245, "lng": -106.942433, "alt": 3119.16},
+            {"name": "Water Down Ruby Isolation", "lat": 38.899247, "lng": -106.942420, "alt": 3119.19, "cluster": 1},
+            {"name": "Air Down Ruby Isolation", "lat": 38.899225, "lng": -106.942404, "alt": 3119.30, "cluster": 1},
+            {"name": "Ruby Isolation Low Spot Drain", "lat": 38.899245, "lng": -106.942433, "alt": 3119.16, "cluster": 1},
 
             {"name": "Houston Water Isolation", "lat": 38.899245, "lng": -106.942433, "alt": 3119.16},
-            {"name": "10\" Emergency Valve", "lat": 38.899173, "lng": -106.942458, "alt": 3119.30},
+            {"name": "10\" Emergency Valve", "lat": 38.899173, "lng": -106.942458, "alt": 3119.30, "cluster": 1},
 
-            {"name": "Peanut Water Drain", "lat": 38.899236, "lng": -106.942569, "alt": 3118.73},
-            {"name": "Peanut Air Drain", "lat": 38.899215, "lng": -106.942595, "alt": 3118.88},
+            {"name": "Peanut Water Drain", "lat": 38.899236, "lng": -106.942569, "alt": 3118.73,"cluster": 1},
+            {"name": "Peanut Air Drain", "lat": 38.899215, "lng": -106.942595, "alt": 3118.88, "cluster": 1},
 
-            {"name": "High Pressure Drain", "lat": 38.899170, "lng": -106.942490, "alt": 3119.25},
-            {"name": "Air Down Houston Isolation", "lat": 38.899270, "lng": -106.942521, "alt": 3118.63},
+            {"name": "High Pressure Drain", "lat": 38.899170, "lng": -106.942490, "alt": 3119.25, "cluster": 1},
+            {"name": "Air Down Houston Isolation", "lat": 38.899270, "lng": -106.942521, "alt": 3118.63, "cluster": 1},
 
-            {"name": "Upper Park Air Isolation", "lat": 38.896572, "lng": -106.948921, "alt": 3132.41},
-            {"name": "Peanut Air Isolation", "lat": 38.896539, "lng": -106.948877, "alt": 3133.20},
-            {"name": "Keystone Air Isolation", "lat": 38.896502, "lng": -106.948858, "alt": 3133.88},
+            {"name": "Upper Park Air Isolation", "lat": 38.896572, "lng": -106.948921, "alt": 3132.41, "cluster": 4},
+            {"name": "Peanut Air Isolation", "lat": 38.896539, "lng": -106.948877, "alt": 3133.20, "cluster": 4},
+            {"name": "Keystone Air Isolation", "lat": 38.896502, "lng": -106.948858, "alt": 3133.88, "cluster": 4},
 
-            {"name": "Upper Park Water Isolation", "lat": 38.896468, "lng": -106.949104, "alt": 3131.90},
-            {"name": "Peanut Water Isolation", "lat": 38.896425, "lng": -106.949068, "alt": 3133.12},
+            {"name": "Upper Park Water Isolation", "lat": 38.896468, "lng": -106.949104, "alt": 3131.90, "cluster": 4},
+            {"name": "Peanut Water Isolation", "lat": 38.896425, "lng": -106.949068, "alt": 3133.12, "cluster": 4},
 
-            {"name": "Peanut Water Drain", "lat": 38.896497, "lng": -106.949012, "alt": 3133.24},
-            {"name": "Upper Park Water Drain", "lat": 38.896399, "lng": -106.948992, "alt": 3134.20},
+            {"name": "Peanut Water Drain", "lat": 38.896497, "lng": -106.949012, "alt": 3133.24, "cluster": 4},
+            {"name": "Upper Park Water Drain", "lat": 38.896399, "lng": -106.948992, "alt": 3134.20, "cluster": 4},
 
-            {"name": "Keystone Air Drain", "lat": 38.896483, "lng": -106.948929, "alt": 3133.88},
+            {"name": "Keystone Air Drain", "lat": 38.896483, "lng": -106.948929, "alt": 3133.88, "cluster": 4},
 
             {"name": "Weather Station Flats Air Drain", "lat": 38.895973, "lng": -106.952852, "alt": 3084.26},
             {"name": "Weather Station Flats Water Drain", "lat": 38.895937, "lng": -106.952819, "alt": 3084.62},
@@ -210,13 +212,24 @@ def index():
                     note="",
                     time="",
                     lat=v["lat"],
-                    lng=v["lng"]
+                    lng=v["lng"],
+                    cluster=v.get("cluster", 0)  # <--- ADD THIS
                 )
                 db.session.add(valve)
         db.session.commit()
         all_valves = Valve.query.all()
 
-    valves_data = [ {"id": v.id, "name": v.name, "water_state": v.water_state, "air_state": v.air_state, "note": v.note, "time": v.time, "lat": v.lat, "lng": v.lng} for v in all_valves]
+    valves_data = [{
+        "id": v.id,
+        "name": v.name,
+        "water_state": v.water_state,
+        "air_state": v.air_state,
+        "note": v.note,
+        "time": v.time,
+        "lat": v.lat,
+        "lng": v.lng,
+        "cluster": v.cluster  # <--- ADD THIS
+    } for v in all_valves]
 
     return render_template('index.html', valves=valves_data)
 
@@ -292,7 +305,6 @@ def login():
         else:
             return render_template('login.html', error="Invalid Credentials")
 
-    # If it's a GET request (just clicking the link), show the page
     return render_template('login.html')
 
 
