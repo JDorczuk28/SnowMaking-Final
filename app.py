@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify, Response
+from flask import Flask, render_template, request, jsonify, Response, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 import io
 import csv
@@ -6,7 +6,7 @@ import pandas as pd
 from flask_login import LoginManager, UserMixin, login_user, logout_user, login_required, current_user, login_manager
 
 app = Flask(__name__, static_url_path='/static')
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///capstone1.sqlite'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///capstone0.sqlite'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'secret-key'
 
@@ -47,14 +47,6 @@ class History(db.Model):
     time = db.Column(db.String(50))
     user_name = db.Column(db.String(100))
 
-class History(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    valve_id = db.Column(db.Integer, db.ForeignKey('valve.id'))
-    state = db.Column(db.String(20))
-    type = db.Column(db.String(20))
-    note = db.Column(db.String(200))
-    time = db.Column(db.String(50))
-    user_name = db.Column(db.String(100))
 
 @app.route('/')
 def index():
@@ -87,7 +79,7 @@ def index():
             {"name": "Prospect Air Drain", "lat": 38.9142140094575, "lng": -106.9491603697095,"alt": 2932.160012852028},
             {"name": "Splain's Terrain Park Spur Water Isolation Valve", "lat": 38.90735862474448,"lng": -106.9529750502346, "alt": 3087.407964582344},
             {"name": "Old Supply Line Water Isolation Valve", "lat": 38.90265318034756, "lng": -106.9540745775514, "alt": 2992.174209413867},
-            {"namfe": "Supply Line Water Low Spot Drain Bottom Of Painter Boy", "lat": 38.90234489370604,"lng": -106.9540139706316, "alt": 2992.122141559981, "cluster": 3},
+            {"name": "Supply Line Water Low Spot Drain Bottom Of Painter Boy", "lat": 38.90234489370604,"lng": -106.9540139706316, "alt": 2992.122141559981, "cluster": 3},
             {"name": "Lower Canaan Air Isolation Valve", "lat": 38.89593739449698, "lng": -106.9528197598721,"alt": 3084.624397696893},
             {"name": "Lower Canaan Air Drain", "lat": 38.90008518929765, "lng": -106.9380239643444,"alt": 3046.619086111072},
 
@@ -335,6 +327,7 @@ def all_History():
             "note": r.note,
             "user": r.user_name
         })
+    return jsonify({"history": history})
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
