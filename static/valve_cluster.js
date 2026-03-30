@@ -1,4 +1,4 @@
-const clusterValves = markerData.filter(v => v.cluster == 1)
+//const clusterValves = markerData.filter(v => v.cluster == 1)
 
 //reuses makeMarker function with first valve in cluster array
 makeMarker({...clusterValves[0], valves: clusterValves}, true)
@@ -26,6 +26,7 @@ function buildClusterHtml(cluster) {
 //tab switching logic for parent tabs (valve tabs) same logic as in handlePopup()
 //sends to handlePopup() once tab is selected
 //builds for first in tabPanels by default
+
 function handleClusterPopup(e, marker){
     const tabButtons = e.querySelectorAll(".cluster-tab")
     const tabPanels = e.querySelectorAll(".cluster-panel")

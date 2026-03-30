@@ -108,6 +108,7 @@ function buildHTML({ id, name, lat, long, water_state = "", air_state = "", note
         <div class="tab-panel" data-panel="air" style="display:none;">
             <label>Air Status</label>
             <select class="status-select" style="width:100%"><option value="Open" ${air_state==='Open'?'selected':''}>Open</option><option value="Closed" ${air_state==='Closed'?'selected':''}>Closed</option></select>
+            <textarea class="notes" placeholder="Notes..." style="width:100%; margin-top:5px;">${note ?? ""}</textarea>
             <button class="save" style="width:100%; margin-top:5px; background:#2ecc71; color:white; border:none; padding:5px;">Save</button>
         </div>
 
