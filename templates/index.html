@@ -34,14 +34,55 @@
     <script src="{{ url_for('static', filename='valve_cluster.js') }}"></script>
     <script src="{{ url_for('static', filename='pipe.js') }}"></script>
     <script src="{{ url_for('static', filename='history.js') }}"></script>
+    <script src="{{ url_for('static', filename='DownloadCSV.js') }}"></script>
 
 
     <button id="history_Button" onclick="getHistory()">History</button>
 
-    <div id="history-Panel" class="history-Panel">
-        <button class="dropbtn" onclick="valveDropdown()"></button>
-        <div id="History-List"></div>
-    </div>
+    <div id="history-panel" class="history-panel">
+        <div class="history-control">
+            <label for="valveFilter">Valve</label>
+            <select id="valveFilter" onchange="filterValves()">
+                <option value="all">All</option>
+                {% for valve in valves %}
+                    <option value="{{ valve.name }}">{{ valve.name }}</option>
+                {% endfor %}
+            </select>
+            <div id="filterOptions-State">
+                <label>Filter State Options...</label>
+                <div>
+                    <input type="radio" name="filter-state" value="all" checked onchange="filterValves()">
+                    <label>All</label>
+                </div>
+                <div>
+                    <input type="radio" name="filter-state" value="Open" onchange="filterValves()">
+                    <label>Open</label>
+                </div>
+                <div>
+                    <input type="radio" name="filter-state" value="Closed" onchange="filterValves()">
+                    <label>Closed</label>
+                </div>
+                <div>
+                    <input type="radio" name="filter-state" value="Cracked" onchange="filterValves()">
+                    <label>Cracked</label>
+                </div>
+            </div>
+            <div id="filerOptions-Type">
+                <label>Filter Type Options...</label>
+                <div>
+                    <input type="radio" name="filter-type" value="all" checked onchange="filterValves()">
+                    <label>All</label>
+                </div>
+                <div>
+                    <input type="radio" name="filter-type" value="air" onchange="filterValves()">
+                    <label>Air</label>
+                </div>
+                <div>
+                    <input type="radio" name="filter-type" value="water" onchange="filterValves()">
+                    <label>Water</label>
+                </div>
+            </div>
+
 
     <div id="map-legend" style="
     position: absolute;
