@@ -1069,4 +1069,3 @@ var latlngs10 = [
 ];
 
 var polyline10 = L.polyline(latlngs10, {color: 'blue', pane:"pipes"}).addTo(map);
-
