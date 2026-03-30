@@ -11,7 +11,6 @@ async function getHistory(){
     const data = await res.json()
     allHist = data.history
     render(allHist)
-
 }
 
 function render(hist){

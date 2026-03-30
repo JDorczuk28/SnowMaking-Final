@@ -86,25 +86,111 @@ html, body {
     display: block;
 }
 
-#history_Button {
-    position: fixed;
+.top-nav {
+    position: absolute;
     top: 10px;
-    left: 60px;
-    z-index: 1002;
+    right: 10px;
+    z-index: 1000; /* Keeps the button on top of the map layer */
 }
 
+.login-button {
+    background-color: white;
+    padding: 8px 15px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.login-button:hover {
+    background-color: #f4f4f4;
+}
+.login-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000; /* This ensures it stays above the Leaflet map */
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#history_Button {
+    position: fixed;
+    top: 20px;
+    left: 70px;
+    z-index: 3000;
+    padding: 8px 14px;
+    background: white;
+    border: 2px solid #333;
+    border-radius: 6px;
+    cursor: pointer;
+}
 
 .history-panel {
     display: none;
     position: fixed;
-    top: 50px;
-    left: 60px;
-    width: 350px;
-    max-height: 300px;
+    top: 70px;
+    left: 20px;
+    width: 360px;
+    max-height: 500px;
     overflow-y: auto;
     background: white;
+    z-index: 2500;
     border: 1px solid #ccc;
-    z-index: 1000;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+}
+
+.history-panel.open {
+    display: block;
+}
+
+.history-control {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#history-list {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.hist {
+    padding: 8px 10px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    background: #fafafa;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* The actual box */
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    position: relative;
+    width: 300px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px; right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-content input {
+    width: 100%;
     padding: 10px;
 }
 
