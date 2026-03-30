@@ -1,5 +1,9 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, Response
 from flask_sqlalchemy import SQLAlchemy
+import io
+import csv
+import pandas as pd
+
 app = Flask(__name__, static_url_path='/static')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///capstone1.sqlite'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -139,7 +143,24 @@ def valve_history(valve_id=None):
 
 @app.route('/history', methods=['GET'])
 def all_History():
-    rows = History.query.order_by(History.id.desc()).all()
+
+    valve_name = request.args.get("valve", "all")
+    state = request.args.get("state", "all")
+    type_ = request.args.get("type", "all")
+    query = History.query
+    if(valve_name != "all"):
+        valve = Valve.query.filter_by(name=valve_name).first()
+        if(valve):
+            query = query.filter_by(valve_id=valve.id)
+
+    if(state != "all"):
+        query = query.filter_by(state=state)
+
+    if(type_ != "all"):
+        query = query.filter_by(type=type_)
+
+
+    rows = query.order_by(History.id.desc()).all()
     history = []
     for r in rows:
         valve = db.session.get(Valve, r.valve_id)
@@ -153,6 +174,19 @@ def all_History():
         })
 
     return jsonify({"history": history})
+
+@app.route('/download_CSV')
+def download_CSV():
+    table = 'history'
+    df = pd.read_sql_table(table, db.engine)
+    output = df.to_csv(index=False)
+    response = Response(
+        output,
+        mimetype="text/csv",
+        headers={"Content-disposition": "attachment; filename=data_download.csv"}
+    )
+    return response
+
 
 with app.app_context():
     db.create_all()
