@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, UserMixin, login_user, logout_user, login_required, current_user, login_manager
+from flask_socketio import SocketIO
 
 app = Flask(__name__, static_url_path='/static')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///capstone1.sqlite'
@@ -8,7 +9,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'secret-key'
 
 db = SQLAlchemy(app)
-
+socketio = SocketIO(app)
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
 
@@ -44,14 +45,6 @@ class History(db.Model):
     time = db.Column(db.String(50))
     user_name = db.Column(db.String(100))
 
-class History(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    valve_id = db.Column(db.Integer, db.ForeignKey('valve.id'))
-    state = db.Column(db.String(20))
-    type = db.Column(db.String(20))
-    note = db.Column(db.String(200))
-    time = db.Column(db.String(50))
-    user_name = db.Column(db.String(100))
 
 @app.route('/')
 def index():
@@ -84,7 +77,7 @@ def index():
             {"name": "Prospect Air Drain", "lat": 38.9142140094575, "lng": -106.9491603697095,"alt": 2932.160012852028},
             {"name": "Splain's Terrain Park Spur Water Isolation Valve", "lat": 38.90735862474448,"lng": -106.9529750502346, "alt": 3087.407964582344},
             {"name": "Old Supply Line Water Isolation Valve", "lat": 38.90265318034756, "lng": -106.9540745775514, "alt": 2992.174209413867},
-            {"namfe": "Supply Line Water Low Spot Drain Bottom Of Painter Boy", "lat": 38.90234489370604,"lng": -106.9540139706316, "alt": 2992.122141559981, "cluster": 3},
+            {"name": "Supply Line Water Low Spot Drain Bottom Of Painter Boy", "lat": 38.90234489370604,"lng": -106.9540139706316, "alt": 2992.122141559981, "cluster": 3},
             {"name": "Lower Canaan Air Isolation Valve", "lat": 38.89593739449698, "lng": -106.9528197598721,"alt": 3084.624397696893},
             {"name": "Lower Canaan Air Drain", "lat": 38.90008518929765, "lng": -106.9380239643444,"alt": 3046.619086111072},
 
@@ -185,7 +178,7 @@ def index():
             {"name": "Ruby Isolation Low Spot Drain", "lat": 38.899245, "lng": -106.942433, "alt": 3119.16, "cluster": 1},
 
             {"name": "Houston Water Isolation", "lat": 38.899245, "lng": -106.942433, "alt": 3119.16},
-            {"name": "10\" Emergency Valve", "lat": 38.899173, "lng": -106.942458, "alt": 3119.30, "cluster": 1},
+            {"name": "10inch Emergency Valve", "lat": 38.899173, "lng": -106.942458, "alt": 3119.30, "cluster": 1},
 
             {"name": "Peanut Water Drain", "lat": 38.899236, "lng": -106.942569, "alt": 3118.73,"cluster": 1},
             {"name": "Peanut Air Drain", "lat": 38.899215, "lng": -106.942595, "alt": 3118.88, "cluster": 1},
@@ -281,7 +274,14 @@ def update_valve():
             print("history added to session")
         db.session.commit()
         print("commit done")
-
+        if changed:
+            socketio.emit('valve_changed', {
+                'id': valve.id,
+                'name': valve.name,
+                'type': valve_type,
+                'new_state': saved_state,
+                'user': selected_user
+            })
         rows = History.query.all()
         print("history count:", len(rows))
         for r in rows:
