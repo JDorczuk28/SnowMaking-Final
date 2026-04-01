@@ -1,4 +1,3 @@
-//const clusterValves = markerData.filter(v => v.cluster == 1)
 
 //reuses makeMarker function with first valve in cluster array
 makeMarker({...clusterValves[0], valves: clusterValves}, true)
