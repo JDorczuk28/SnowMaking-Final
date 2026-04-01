@@ -36,6 +36,7 @@ class User(db.Model, UserMixin):
     is_admin = db.Column(db.Boolean, default=False) # The new permission flag
     valves = db.relationship('Valve', backref='user')
 
+
 class History(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     valve_id = db.Column(db.Integer, db.ForeignKey('valve.id'))
