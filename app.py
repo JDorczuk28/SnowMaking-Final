@@ -4,12 +4,13 @@ import io
 import csv
 import pandas as pd
 from flask_login import LoginManager, UserMixin, login_user, logout_user, login_required, current_user, login_manager
-
+from flask_socketio import SocketIO
 app = Flask(__name__, static_url_path='/static')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///capstone0.sqlite'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'secret-key'
 
+socket = SocketIO(app)
 db = SQLAlchemy(app)
 
 login_manager = LoginManager(app)
@@ -276,6 +277,14 @@ def update_valve():
             print("history added to session")
         db.session.commit()
         print("commit done")
+
+        socket.emit('valve_changed', {
+            'name': valve.name,
+            'type': valve_type,
+            'new_state': saved_state,
+            'user': selected_user
+        })
+
 
         rows = History.query.all()
         print("history count:", len(rows))
