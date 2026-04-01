@@ -1,0 +1,3598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="document">
+	<name>Untitled map</name>
+	<gx:CascadingStyle kml:id="__managed_style_055B23278F3DA743DFC4">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff58eeff</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_2EB1E871E13DA73E601B">
+		<Style>
+			<IconStyle>
+				<scale>0.9</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=f57c00&amp;id=2328&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_13FA473DDB3DA73E601B">
+		<Style>
+			<IconStyle>
+				<scale>0.75</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=f57c00&amp;id=2328&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_0227E1113B3DA73E601B">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_13FA473DDB3DA73E601B</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_2EB1E871E13DA73E601B</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_08DB225FEF3DA73C69E1">
+		<Style>
+			<IconStyle>
+				<scale>0.75</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=ffee58&amp;id=2346&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_28C7FA1D1F3DA72EAAC3">
+		<Style>
+			<IconStyle>
+				<scale>0.9</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=ffee58&amp;id=2358&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_0FACAD424A3DA72FCEEF">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_141933CA463DA72FCEEF</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_2F35C11E893DA72FCEEF</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_19FD364CF43DA729EF7F">
+		<Style>
+			<IconStyle>
+				<scale>0.75</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2346&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_038AF3CF013DA72EAAC3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_150531C6843DA72EAAC3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_28C7FA1D1F3DA72EAAC3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_150531C6843DA72EAAC3">
+		<Style>
+			<IconStyle>
+				<scale>0.75</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=ffee58&amp;id=2358&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_170D2608E53DA73C69E1">
+		<Style>
+			<IconStyle>
+				<scale>0.9</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=ffee58&amp;id=2346&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_0B2B2F43FD3DA73E9A71">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_1BA0EDB1103DA73E9A71</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_2C150D24823DA73E9A71</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_24CB158FA73DA729EF7F">
+		<Style>
+			<IconStyle>
+				<scale>0.9</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2346&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_0FABB665C33DA73C69E0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_08DB225FEF3DA73C69E1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_170D2608E53DA73C69E1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_2091696A413DA72BD948">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2346&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_2C150D24823DA73E9A71">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=f57c00&amp;id=2322&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_14084FE0363DA72BD948">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2346&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_057B75A0623DA72BD948">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_14084FE0363DA72BD948</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_2091696A413DA72BD948</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_1CBCA3C5303DA743DFC3">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff58eeff</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_026428FA773DA743DFC3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_1CBCA3C5303DA743DFC3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_055B23278F3DA743DFC4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="__managed_style_028486B4C63DA729EF7F">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_19FD364CF43DA729EF7F</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_24CB158FA73DA729EF7F</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_141933CA463DA72FCEEF">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ffd27619</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_1BA0EDB1103DA73E9A71">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=f57c00&amp;id=2322&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_2F35C11E893DA72FCEEF">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ffd27619</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<Placemark id="0C995A8AAF3DA728183C">
+		<name>Primary Pumphouse</name>
+		<LookAt>
+			<longitude>-106.9515589217461</longitude>
+			<latitude>38.92213069037032</latitude>
+			<altitude>2763.655753959059</altitude>
+			<heading>16.36153919568011</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>222.753950803708</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0B2B2F43FD3DA73E9A71</styleUrl>
+		<Point>
+			<coordinates>-106.9512133554679,38.92212304235683,2762.369402266106</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="076E417D1D3DA728C8FC">
+		<name>Pond/Pit Isolation Valve</name>
+		<LookAt>
+			<longitude>-106.9515589217461</longitude>
+			<latitude>38.92213069037032</latitude>
+			<altitude>2763.655753959059</altitude>
+			<heading>16.36153919568011</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>222.753950803708</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9510905399406,38.92215477817986,2762.426209372418</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0773DB4E2E3DA72AF658">
+		<name>Manifold Drain</name>
+		<LookAt>
+			<longitude>-106.9515589217461</longitude>
+			<latitude>38.92213069039146</latitude>
+			<altitude>2763.655716230386</altitude>
+			<heading>16.36153919568011</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>222.7539971589068</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.951103079818,38.92211155200594,2762.405989856616</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0B9F2F43093DA72BAA28">
+		<name>Pumphouse Drain</name>
+		<LookAt>
+			<longitude>-106.951520880909</longitude>
+			<latitude>38.92219184447723</latitude>
+			<altitude>2762.356349852803</altitude>
+			<heading>16.36156309504547</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>224.0533797342141</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_057B75A0623DA72BD948</styleUrl>
+		<Point>
+			<coordinates>-106.9511228864435,38.92211546335712,2762.687158021773</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="06143352303DA72D37B0">
+		<name>Supply Line Drain</name>
+		<LookAt>
+			<longitude>-106.9516273218259</longitude>
+			<latitude>38.92222632110237</latitude>
+			<altitude>2761.759301427556</altitude>
+			<heading>16.36149622198029</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>224.6503419833243</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_057B75A0623DA72BD948</styleUrl>
+		<Point>
+			<coordinates>-106.9511652589825,38.92210118694455,2762.608162943292</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="00953963FB3DA72DA118">
+		<name>Primary Instrument Air Condensate Drain</name>
+		<LookAt>
+			<longitude>-106.9516273218259</longitude>
+			<latitude>38.92222632110237</latitude>
+			<altitude>2761.759301427556</altitude>
+			<heading>16.36149622198029</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>224.6503419833243</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_038AF3CF013DA72EAAC3</styleUrl>
+		<Point>
+			<coordinates>-106.9511573144119,38.92215458532085,2762.22377794831</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="011F82018C3DA72E55E4">
+		<name>Backup Instrument Air Condensate Drain</name>
+		<LookAt>
+			<longitude>-106.9516273218259</longitude>
+			<latitude>38.92222632110237</latitude>
+			<altitude>2761.759301427556</altitude>
+			<heading>16.36149622198029</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>224.6503419833243</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_038AF3CF013DA72EAAC3</styleUrl>
+		<Point>
+			<coordinates>-106.9511348940024,38.92214509296524,2762.292098952913</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0406565A8C3DA72F8E84">
+		<name>Pond Inlet</name>
+		<LookAt>
+			<longitude>-106.9516273218259</longitude>
+			<latitude>38.92222632110237</latitude>
+			<altitude>2761.759301427556</altitude>
+			<heading>16.36149622198029</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>224.6503419833243</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9510817394067,38.92230783728591,0 -106.9509879619451,38.92225701971752,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="011334C21D3DA730321F">
+		<name>Pond Outlet</name>
+		<LookAt>
+			<longitude>-106.9511953743847</longitude>
+			<latitude>38.92247871009285</latitude>
+			<altitude>2759.58095913148</altitude>
+			<heading>16.36151578965366</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>113.7276359401221</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9508459970508,38.92244628711076,0 -106.9508337250871,38.92236121412098,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="083F701BB93DA7309223">
+		<name>Pumphouse Inlet</name>
+		<LookAt>
+			<longitude>-106.9513137868771</longitude>
+			<latitude>38.92231914989995</latitude>
+			<altitude>2759.700112426785</altitude>
+			<heading>16.36144139597137</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>113.6084914906132</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9510023331968,38.92219665387631,0 -106.9510985961532,38.92215497863732,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="01C3BEB7053DA734508C">
+		<name>Supply Line </name>
+		<LookAt>
+			<longitude>-106.9534554844104</longitude>
+			<latitude>38.90001961511581</latitude>
+			<altitude>3031.492780539385</altitude>
+			<heading>16.36129541836283</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>494.7329506796815</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9511934088598,38.92208992271926,0 -106.9556887295865,38.92015690702192,0 -106.9558987632926,38.91999143649616,0 -106.9558846818254,38.9196249241156,0 -106.9575732968853,38.91896218762584,0 -106.9571264219977,38.91869122449646,0 -106.9568430166141,38.91843590734137,0 -106.9567897905673,38.91810844708132,0 -106.956911252512,38.91793906314723,0 -106.957220386877,38.9178017769812,0 -106.9573853434041,38.91758292208043,0 -106.9575467212259,38.91691664714684,0 -106.9575893190383,38.91657060650208,0 -106.9576934580161,38.91619591652037,0 -106.9574969554197,38.91573967515894,0 -106.9565610215855,38.91506128056035,0 -106.9565336526351,38.91412812615476,0 -106.9565572677838,38.9140390717813,0 -106.9565787744462,38.91375347159197,0 -106.956579788072,38.91324375571148,0 -106.9564306935118,38.91269228509388,0 -106.9549852709585,38.91019199518846,0 -106.9545511015724,38.90932507581711,0 -106.953632082035,38.90832145105075,0 -106.9536001511606,38.90781540705688,0 -106.952885893726,38.90730210263273,0 -106.9529407053779,38.90639452981891,0 -106.9536861607269,38.90546336048589,0 -106.9540003718397,38.90502923192287,0 -106.9540033370894,38.90392934263103,0 -106.9540936539199,38.90248319095542,0 -106.9539345335511,38.90202046187787,0 -106.9534584126821,38.90117081387603,0 -106.9528143243601,38.89874329059874,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="01050786703DA7376EA9">
+		<name>Shop Line </name>
+		<LookAt>
+			<longitude>-106.9571254682867</longitude>
+			<latitude>38.919190080455</latitude>
+			<altitude>2899.091249691601</altitude>
+			<heading>16.3589349414477</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>314.0191785675052</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9565576829097,38.91505790869874,0 -106.957555856286,38.91574506528336,0 -106.9577629019949,38.91622944584581,0 -106.957653831147,38.91644888697994,0 -106.9574189900111,38.91748763643731,0 -106.9573844643475,38.91761425777204,0 -106.957219456031,38.91783300486495,0 -106.9569225666876,38.91796355487547,0 -106.9568275882531,38.91809933676043,0 -106.9568705402512,38.9184317526409,0 -106.9571338990792,38.91867438502648,0 -106.9575886352959,38.91896058564318,0 -106.9577731118792,38.91904625243151,0 -106.9583324704255,38.91908892578896,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0CFFF89EAE3DA737F0F0">
+		<name>Shop Line Low Spot Drain at Indian Trail</name>
+		<LookAt>
+			<longitude>-106.9575304369962</longitude>
+			<latitude>38.91905026603767</latitude>
+			<altitude>2908.707595201366</altitude>
+			<heading>16.35864710391911</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>64.24774916289607</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.957582917884,38.91895854601444,2909.870245635975</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="046ECBA9A33DA7391640">
+		<name>Supply Line Low Spot Drain at Indian Trail</name>
+		<LookAt>
+			<longitude>-106.955884177005</longitude>
+			<latitude>38.91964404438743</latitude>
+			<altitude>2884.418154651654</altitude>
+			<heading>16.35968132425702</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>88.53718955275328</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9558829995864,38.91962383225256,2884.325986115478</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="04DE2D046D3DA7398D3F">
+		<name>Old Supply Line Drain at Indian Trail</name>
+		<LookAt>
+			<longitude>-106.955884177005</longitude>
+			<latitude>38.91964404438743</latitude>
+			<altitude>2884.418154651654</altitude>
+			<heading>16.35968132425702</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>88.53718955275328</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9558808986738,38.91961943050097,2884.277518494453</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="047BC039EA3DA73A0AE8">
+		<name>Shop Line Low Spot Drain At Bridge</name>
+		<LookAt>
+			<longitude>-106.9579400279263</longitude>
+			<latitude>38.91644219117789</latitude>
+			<altitude>2922.425191131632</altitude>
+			<heading>16.35831379915825</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>185.2540204619618</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9576546778357,38.916458352512,2924.588593226947</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0FA48D66543DA73A6244">
+		<name>Shop Line Isolation Valve</name>
+		<LookAt>
+			<longitude>-106.9568613180057</longitude>
+			<latitude>38.9151631075411</latitude>
+			<altitude>2929.957099048353</altitude>
+			<heading>16.35899141946848</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>177.722123474814</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9565579775909,38.91505892671965,2931.232594538519</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="09009D7B823DA73A94D9">
+		<name>Shop Line Low Spot Drain at Isolation Valve</name>
+		<LookAt>
+			<longitude>-106.9568613180057</longitude>
+			<latitude>38.9151631075411</latitude>
+			<altitude>2929.957099048353</altitude>
+			<heading>16.35899141946848</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>177.722123474814</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9565671446225,38.9150541569166,2931.240310888161</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="07AF85E2233DA73B6540">
+		<name>Supply Line Low Spot Drain Bottom of Gold LInk</name>
+		<LookAt>
+			<longitude>-106.9568782831071</longitude>
+			<latitude>38.91427732471507</latitude>
+			<altitude>2930.638594764035</altitude>
+			<heading>16.35898076711648</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>177.040620932039</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9565647085879,38.91409291772526,2932.880731295937</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0203F544973DA73BF716">
+		<name>Cascade Air Drain</name>
+		<LookAt>
+			<longitude>-106.9566856260368</longitude>
+			<latitude>38.91286690790665</latitude>
+			<altitude>2940.611165212689</altitude>
+			<heading>16.35910179191426</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>167.0680531995095</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9564367294931,38.9126886688477,2942.753051237238</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0BC9C91E683DA73C9633">
+		<name>Old Supply Drain at Bottom of Cascade</name>
+		<LookAt>
+			<longitude>-106.9566856260368</longitude>
+			<latitude>38.91286690790665</latitude>
+			<altitude>2940.611165212689</altitude>
+			<heading>16.35910179191426</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>167.0680531995095</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9564463784478,38.91269189024945,2942.681799352766</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0758264EFF3DA73D450C">
+		<name>Snomax Building</name>
+		<LookAt>
+			<longitude>-106.9536978566429</longitude>
+			<latitude>38.90801689836091</latitude>
+			<altitude>3085.947376263727</altitude>
+			<heading>16.36105229480366</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>171.1039222208274</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0227E1113B3DA73E601B</styleUrl>
+		<Point>
+			<coordinates>-106.9536181236681,38.90780135286678,3087.524107337515</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0F117097943DA73EEF0F">
+		<name>Prospect Air Isolation Valve</name>
+		<LookAt>
+			<longitude>-106.9536568968674</longitude>
+			<latitude>38.90785301940025</latitude>
+			<altitude>3087.518985976455</altitude>
+			<heading>16.36096845284388</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>43.06426643324357</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.953587706901,38.90782173570921,3087.578842224413</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="058A6B9D243DA73F4CC4">
+		<name>Prospect Water Isolation Valve</name>
+		<LookAt>
+			<longitude>-106.9536568968674</longitude>
+			<latitude>38.90785301940025</latitude>
+			<altitude>3087.518985976455</altitude>
+			<heading>16.36096845284388</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>43.06426643324357</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9535830024344,38.90781620297497,3087.587307828432</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0BAD9718773DA73FD704">
+		<name>Agitator Pump Drain</name>
+		<LookAt>
+			<longitude>-106.9536568968674</longitude>
+			<latitude>38.90785301940025</latitude>
+			<altitude>3087.518985976455</altitude>
+			<heading>16.36096845284388</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>43.06426643324357</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9536078734225,38.90780232654392,3087.542563911409</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="01F3C8415B3DA7403A08">
+		<name>Snomax Injection Line Drain</name>
+		<LookAt>
+			<longitude>-106.9536568968674</longitude>
+			<latitude>38.90785301940025</latitude>
+			<altitude>3087.518985976455</altitude>
+			<heading>16.36096845284388</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>43.06426643324357</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.953598012461,38.90780287999758,3087.560305101853</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="028927F7563DA742332E">
+		<name>Prospect Water</name>
+		<LookAt>
+			<longitude>-106.9492537573938</longitude>
+			<latitude>38.91423694607458</latitude>
+			<altitude>2932.07035273927</altitude>
+			<heading>16.36347180958393</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>98.8276380605021</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9535699077594,38.90781552254901,0 -106.952903386906,38.90789524050923,0 -106.951764267277,38.90815757794268,0 -106.951562321368,38.90819467452803,0 -106.9508936319986,38.90825854754371,0 -106.9501359959335,38.91043412727203,0 -106.9494667030944,38.91261098967984,0 -106.9491551488256,38.91421473763908,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="04EAAC531A3DA7429986">
+		<name>Prospect Water Drain</name>
+		<LookAt>
+			<longitude>-106.9492537573938</longitude>
+			<latitude>38.91423694607458</latitude>
+			<altitude>2932.07035273927</altitude>
+			<heading>16.36347180958393</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>98.8276380605021</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9491546218801,38.91421397691617,2932.160380346559</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="062661F9EA3DA742CFE3">
+		<name>Prospect Air Drain</name>
+		<LookAt>
+			<longitude>-106.9492537573938</longitude>
+			<latitude>38.91423694607458</latitude>
+			<altitude>2932.07035273927</altitude>
+			<heading>16.36347180958393</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>98.8276380605021</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9491603697095,38.9142140094575,2932.160012852028</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0EB74262AB3DA743B927">
+		<name>Prospect Air</name>
+		<LookAt>
+			<longitude>-106.9535319308289</longitude>
+			<latitude>38.90786381421846</latitude>
+			<altitude>3087.696285864787</altitude>
+			<heading>16.36125904739032</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>35.81223026676525</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_026428FA773DA743DFC3</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9491558844894,38.91422131418493,0 -106.9494791717176,38.91260077164054,0 -106.9501593462836,38.91043222551103,0 -106.950905474173,38.9082614539202,0 -106.951561002653,38.90820703038742,0 -106.9529162215567,38.90790882232031,0 -106.9535716975983,38.90781946986935,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0E83C8FDCD3DA7449010">
+		<name>Splain&apos;s Terrain Park Spur Water Isolation Valve</name>
+		<LookAt>
+			<longitude>-106.9531235266959</longitude>
+			<latitude>38.90735786576649</latitude>
+			<altitude>3087.236614446296</altitude>
+			<heading>16.36159744808023</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>65.7901836338897</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9529750502346,38.90735862474448,3087.407964582344</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="089BB7A3A03DA745EB56">
+		<name>Splain&apos;s Terrain Park Spur</name>
+		<LookAt>
+			<longitude>-106.9523097368698</longitude>
+			<latitude>38.90771436989722</latitude>
+			<altitude>3092.736193793588</altitude>
+			<heading>16.36239427295908</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>254.7079104042496</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9529605933335,38.90737851882545,0 -106.9525533353131,38.90758965333077,0 -106.9517922976981,38.90758376177747,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="086A3108943DA746CDD4">
+		<name>Old Supply Line Water Isolation Valve</name>
+		<LookAt>
+			<longitude>-106.9540216356238</longitude>
+			<latitude>38.90271898728156</latitude>
+			<altitude>2992.346201075988</altitude>
+			<heading>16.36116044476407</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>58.00268408100237</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9540745775514,38.90265318034756,2992.174209413867</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0E6E21913D3DA7479BC0">
+		<name>Supply Line Water Low Spot Drain Bottom Of Painter Boy</name>
+		<LookAt>
+			<longitude>-106.9540346733311</longitude>
+			<latitude>38.90246685513033</latitude>
+			<altitude>2991.37997759036</altitude>
+			<heading>16.36113099232315</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>33.37051652941227</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9540784768617,38.90244983376426,2991.272117577514</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0B408ABB5E3DA7482A87">
+		<name>Houston Water Drain</name>
+		<LookAt>
+			<longitude>-106.9540346733311</longitude>
+			<latitude>38.90246685513033</latitude>
+			<altitude>2991.37997759036</altitude>
+			<heading>16.36113099232315</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>33.37051652941227</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9540598177001,38.90245824369271,2991.285672069339</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0245F62A723DA7486E8F">
+		<name>12&quot; Water Up Houston Isolation Valve</name>
+		<LookAt>
+			<longitude>-106.9540346733311</longitude>
+			<latitude>38.90246685513033</latitude>
+			<altitude>2991.37997759036</altitude>
+			<heading>16.36113099232315</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>33.37051652941227</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9540622175348,38.90246023638628,2991.289862424823</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0A4013018F3DA7495339">
+		<name>Houston Road Spur Water</name>
+		<LookAt>
+			<longitude>-106.9552617170221</longitude>
+			<latitude>38.9023146532527</latitude>
+			<altitude>2984.151659847568</altitude>
+			<heading>16.3604077493316</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>138.0337757903181</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9540789730763,38.90245115911939,0 -106.9542520868792,38.90238244217897,0 -106.9548901560069,38.90233364311422,0 -106.955232792076,38.90225274004843,0 -106.9554271596082,38.90221553801824,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0308C14E1D3DA74A0814">
+		<name>Houston Road Spur Air</name>
+		<LookAt>
+			<longitude>-106.9552782928619</longitude>
+			<latitude>38.90224735064488</latitude>
+			<altitude>2984.888450193982</altitude>
+			<heading>16.36044028627508</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>54.78432375550257</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_026428FA773DA743DFC3</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.954075245767,38.90245051773081,0 -106.9542523192425,38.9023787743708,0 -106.9548903556819,38.90232927398552,0 -106.9554263693554,38.90221285828913,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="04A47B7DC93DA74A3E4C">
+		<name>Houston Road Spur Water Drain</name>
+		<LookAt>
+			<longitude>-106.9552782928619</longitude>
+			<latitude>38.90224735064488</latitude>
+			<altitude>2984.888450193982</altitude>
+			<heading>16.36044028627508</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>54.78432375550257</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9554255194726,38.90221660471385,2983.740389471092</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="03470503D93DA74A7B70">
+		<name>Houston Road Spur Air Drain</name>
+		<LookAt>
+			<longitude>-106.9552782928619</longitude>
+			<latitude>38.90224735064488</latitude>
+			<altitude>2984.888450193982</altitude>
+			<heading>16.36044028627508</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>54.78432375550257</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9554264866603,38.90221252659605,2983.783875264903</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0EC82F8F993DA74AF044">
+		<name>Houston Spur Air Isolation Valve</name>
+		<LookAt>
+			<longitude>-106.9540710663678</longitude>
+			<latitude>38.90246841584126</latitude>
+			<altitude>2991.290370900385</altitude>
+			<heading>16.36122053499204</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>25.05532098310141</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9540728336855,38.9024364456631,2991.279790923259</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0965A0E6E83DA74B4D44">
+		<name>Houston  Spur Water Isolation Valve</name>
+		<LookAt>
+			<longitude>-106.9540710663678</longitude>
+			<latitude>38.90246841584126</latitude>
+			<altitude>2991.290370900385</altitude>
+			<heading>16.36122053499204</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>25.05532098310141</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9541012089305,38.90245145451588,2991.275718532474</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="003F2B98BF3DA74C5EA1">
+		<name>Houston Spur Low Spot Drain at Water Isolation</name>
+		<LookAt>
+			<longitude>-106.9540714089424</longitude>
+			<latitude>38.90247049145662</latitude>
+			<altitude>2991.289137830597</altitude>
+			<heading>16.36122355303824</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>24.99999895062956</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9540929185761,38.90245090044503,2991.281002848298</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="09046647CD3DA74CC730">
+		<name>Houston Spur Air Low Spot Drain At Isolation</name>
+		<LookAt>
+			<longitude>-106.9540714089424</longitude>
+			<latitude>38.90247049145662</latitude>
+			<altitude>2991.289137830597</altitude>
+			<heading>16.36122355303824</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>24.99999895062956</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9540708616844,38.90243248755982,2991.281002848298</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="09FAD7EF8A3DA7527B0F">
+		<name>Houston Water</name>
+		<LookAt>
+			<longitude>-106.9426882972945</longitude>
+			<latitude>38.89967069965552</latitude>
+			<altitude>3112.488950234106</altitude>
+			<heading>34.09515557953534</heading>
+			<tilt>5.264067224895074</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>166.7286056680859</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9540858153983,38.9024602709718,0 -106.9529898964149,38.90261810935556,0 -106.9519965154059,38.90280564872342,0 -106.9509533221603,38.90289734684239,0 -106.9505152788094,38.90281812425247,0 -106.9501686769036,38.902623231317,0 -106.9496626806403,38.90245375030531,0 -106.9491026971228,38.90235670196624,0 -106.9468136281547,38.90281673079725,0 -106.9463928237482,38.90273298316193,0 -106.9461110718562,38.90251217978104,0 -106.9456509909929,38.90221220424667,0 -106.9453761956754,38.90203453035251,0 -106.9451246779111,38.90181738006437,0 -106.9445948582881,38.90104253108098,0 -106.9436678760332,38.90055646665088,0 -106.9432593019376,38.90016760107473,0 -106.9430204326198,38.89989352668234,0 -106.9425012152256,38.89921742702777,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0C8556B2363DA75417C8">
+		<name>Gold Link Air</name>
+		<LookAt>
+			<longitude>-106.9563902167952</longitude>
+			<latitude>38.91266799608186</latitude>
+			<altitude>2943.200969824737</altitude>
+			<heading>34.0862512862793</heading>
+			<tilt>5.263972082493238</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>51.3572027925693</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_026428FA773DA743DFC3</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9527789809332,38.89872461444784,0 -106.9534440970274,38.90119843721854,0 -106.9539100098976,38.90203949915309,0 -106.9540805768029,38.90250452905636,0 -106.9539807262706,38.90397869880911,0 -106.9539752863695,38.90479901008162,0 -106.9539831626877,38.90502883523126,0 -106.9529296182181,38.90638610028971,0 -106.952873663078,38.90730471119675,0 -106.9535808898935,38.90781300096148,0 -106.9536208370993,38.90832676225298,0 -106.9545413306959,38.9093296885256,0 -106.956432391136,38.91269209418582,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0C3347F75C3DA754D4C8">
+		<name>Splain&apos;s Terrain Park Spur Air</name>
+		<LookAt>
+			<longitude>-106.9519029027405</longitude>
+			<latitude>38.90762558496579</latitude>
+			<altitude>3092.912821677246</altitude>
+			<heading>34.08972124520132</heading>
+			<tilt>5.263992652105588</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>76.30176961713005</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_026428FA773DA743DFC3</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9529736628027,38.90737709352788,0 -106.9525579734483,38.90759604382902,0 -106.9517921595813,38.9075879196064,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="02E9CAD0B83DA758FC08">
+		<name>Houston Air</name>
+		<LookAt>
+			<longitude>-106.9426114372935</longitude>
+			<latitude>38.89932278528513</latitude>
+			<altitude>3117.860496642779</altitude>
+			<heading>34.09578830981977</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>43.78524622212808</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_026428FA773DA743DFC3</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9540653408164,38.90246906058443,0 -106.9527153997913,38.90267339690261,0 -106.952274224749,38.90275588436703,0 -106.9519962801638,38.90280977086913,0 -106.9516669367148,38.90283809659189,0 -106.9513842586005,38.90286258992403,0 -106.9510268856007,38.90289325078196,0 -106.9509507301528,38.90289939036023,0 -106.9505131057388,38.90281962228483,0 -106.950167242757,38.90262457395617,0 -106.949661973129,38.90245473764932,0 -106.9491030009089,38.90235804146789,0 -106.9468137394364,38.902825492249,0 -106.9463875631952,38.90273883862174,0 -106.9461015226206,38.90250929527051,0 -106.9453695163234,38.90203684969494,0 -106.9451176404196,38.90181510933936,0 -106.9445928199866,38.9010446329474,0 -106.9436656883053,38.90055807592631,0 -106.943254372031,38.90016781506387,0 -106.9424983243338,38.89921916757503,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="05BD4025863DA760EA57">
+		<name>Springbox Flats Valve Block House</name>
+		<LookAt>
+			<longitude>-106.952815753012</longitude>
+			<latitude>38.89877857770735</latitude>
+			<altitude>3042.31981892938</altitude>
+			<heading>34.08986362352736</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>33.70414068899663</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0227E1113B3DA73E601B</styleUrl>
+		<Point>
+			<coordinates>-106.9527709792743,38.89873307026519,3041.894303013824</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="09387497183DA761C334">
+		<name>Spring Box Water Low Spot Drain</name>
+		<LookAt>
+			<longitude>-106.9528010249948</longitude>
+			<latitude>38.8987305578361</latitude>
+			<altitude>3041.498390360266</altitude>
+			<heading>34.08946421588527</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>47.66329607220542</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9528026484832,38.8987376652247,3041.608867803677</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="03938C6E033DA762520B">
+		<name>Springbox Air Low Spot Drain</name>
+		<LookAt>
+			<longitude>-106.9528010249948</longitude>
+			<latitude>38.8987305578361</latitude>
+			<altitude>3041.498390360266</altitude>
+			<heading>34.08946421588527</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>47.66329607220542</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.952805559422,38.89874168891287,3041.66564567345</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="01850E1E643DA762A1A9">
+		<name>Air Down Keystone Isolation Valve</name>
+		<LookAt>
+			<longitude>-106.9528010249948</longitude>
+			<latitude>38.8987305578361</latitude>
+			<altitude>3041.498390360266</altitude>
+			<heading>34.08946421588527</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>47.66329607220542</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9527973514719,38.89874162422797,3041.751834700213</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="00EEC043FA3DA762F18C">
+		<name>Gold Link Air Isolation</name>
+		<LookAt>
+			<longitude>-106.9528010249948</longitude>
+			<latitude>38.8987305578361</latitude>
+			<altitude>3041.498390360266</altitude>
+			<heading>34.08946421588527</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>47.66329607220542</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9527847828511,38.8987413623353,3041.882422640962</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="06CE5D3BC83DA7632EF0">
+		<name>Water Down Keystone Isolation Valve</name>
+		<LookAt>
+			<longitude>-106.9528010249948</longitude>
+			<latitude>38.8987305578361</latitude>
+			<altitude>3041.498390360266</altitude>
+			<heading>34.08946421588527</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>47.66329607220542</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9527972887209,38.89873590946311,3041.638322141395</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="09F6A91DA33DA7639A2E">
+		<name>Water Up Keystone Isolation Valve</name>
+		<LookAt>
+			<longitude>-106.9528010249948</longitude>
+			<latitude>38.8987305578361</latitude>
+			<altitude>3041.498390360266</altitude>
+			<heading>34.08946421588527</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>47.66329607220542</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9527617981995,38.89873062993899,3041.989319875232</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="00E9F9F16C3DA765173C">
+		<name>Lower Keystone Air</name>
+		<LookAt>
+			<longitude>-106.94914555888</longitude>
+			<latitude>38.89646495711953</latitude>
+			<altitude>3131.037711312846</altitude>
+			<heading>34.09200836537879</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>110.7940471891561</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_026428FA773DA743DFC3</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9527584119802,38.89872433904142,0 -106.952489680222,38.89868071820318,0 -106.9521582375973,38.89853536348205,0 -106.9518744084035,38.89838680292682,0 -106.9514724115713,38.89808602554525,0 -106.9512244796747,38.89781200705067,0 -106.9509667007691,38.89764164678679,0 -106.9507523207775,38.8974019447689,0 -106.9504283109502,38.89692241627694,0 -106.9495442273783,38.89657601340926,0 -106.9490013773826,38.89653972984362,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="051EB61C263DA765F3C1">
+		<name>Lower Keystone Water</name>
+		<LookAt>
+			<longitude>-106.9527071108971</longitude>
+			<latitude>38.8986769972563</latitude>
+			<altitude>3041.430164197936</altitude>
+			<heading>34.09017139758897</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>24.99999895062956</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9490040173204,38.89654555504113,0 -106.949540454559,38.89658118107974,0 -106.9504179333161,38.89692582128689,0 -106.9509547225075,38.89764255077785,0 -106.9512142789495,38.89781120600762,0 -106.9514593538685,38.89808659518904,0 -106.9518632281649,38.89838765328082,0 -106.9521688366695,38.8985508064841,0 -106.9524897261043,38.89868852570581,0 -106.9527635192592,38.89872691414954,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0D622BB1F53DA767242E">
+		<name>Lower Keystone Water</name>
+		<LookAt>
+			<longitude>-106.9623955044294</longitude>
+			<latitude>38.89942637244201</latitude>
+			<altitude>2904.450610696681</altitude>
+			<heading>34.08429543648564</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>197.5141940737012</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9528099263887,38.89874265297088,0 -106.9531070989565,38.89892937167423,0 -106.9547379306571,38.89934860749688,0 -106.9555880713023,38.89981906080902,0 -106.9560798081241,38.90015722294445,0 -106.9564443158335,38.90043456309186,0 -106.9575845104505,38.90076764234468,0 -106.9580684022102,38.90090588346525,0 -106.9587439134802,38.90096964320229,0 -106.9593937314109,38.90092141562635,0 -106.9599612379109,38.90073097086238,0 -106.9604095588937,38.90043141349734,0 -106.9619271216654,38.89946756228423,0 -106.9622628931359,38.89931170815035,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0F9E5AD3463DA76814BE">
+		<name>Lower Keystone Air</name>
+		<LookAt>
+			<longitude>-106.9530126321271</longitude>
+			<latitude>38.89886849173063</latitude>
+			<altitude>3041.401616262228</altitude>
+			<heading>34.09018754928502</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>60.56317142627451</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_026428FA773DA743DFC3</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9622701571301,38.89931845585277,0 -106.961940967244,38.89947595369642,0 -106.9599615586637,38.9007415215887,0 -106.9593849848664,38.90093805427394,0 -106.9587414470241,38.90098082551631,0 -106.9580696864142,38.90091385513917,0 -106.9564408248672,38.90043878653574,0 -106.9555775357723,38.89982184034409,0 -106.9547348013752,38.8993544096803,0 -106.9531061465949,38.89893405756962,0 -106.9528058849336,38.89874442982405,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0D14CB42353DA7689B28">
+		<name>Warming House Hill Water Isolation</name>
+		<LookAt>
+			<longitude>-106.9622550815812</longitude>
+			<latitude>38.89931784083436</latitude>
+			<altitude>2906.430841845443</altitude>
+			<heading>34.08397423224978</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>25.18186777840584</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9622649193031,38.89931018067447,2906.291838802207</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0927DB7C053DA768EA20">
+		<name>Warming House Hill Air Isolation</name>
+		<LookAt>
+			<longitude>-106.9622550815812</longitude>
+			<latitude>38.89931784083436</latitude>
+			<altitude>2906.430841845443</altitude>
+			<heading>34.08397423224978</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>25.18186777840584</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9622725028364,38.89931642136976,2906.206544922511</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0C47BD336F3DA769B50C">
+		<name>Warming House Hill Water</name>
+		<LookAt>
+			<longitude>-106.9656555834316</longitude>
+			<latitude>38.89932136582428</latitude>
+			<altitude>2857.197476343831</altitude>
+			<heading>34.08182770701983</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>112.0788510544662</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9622635154879,38.8993120086212,0 -106.9625033824705,38.89929700169517,0 -106.963000835457,38.89932297678566,0 -106.9634125393899,38.89938125247954,0 -106.9638734316671,38.89944444141166,0 -106.9642759519467,38.89948954413147,0 -106.9646457571238,38.89952641193533,0 -106.9652251845459,38.89960945208909,0 -106.9655133380161,38.89913858754007,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0EEF371F7A3DA76A6EE1">
+		<name>Warming House Hill Air</name>
+		<LookAt>
+			<longitude>-106.962475432164</longitude>
+			<latitude>38.89933498858473</latitude>
+			<altitude>2903.078556084106</altitude>
+			<heading>34.08382469976398</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>66.19776171863124</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_026428FA773DA743DFC3</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9655199764301,38.8991397174438,0 -106.9652251879134,38.89961245896336,0 -106.9646424749577,38.89952936446248,0 -106.9642732761014,38.89949270736383,0 -106.9638769000004,38.89944824370577,0 -106.9634139662607,38.89938855556815,0 -106.9630015060082,38.8993252528706,0 -106.9625008413838,38.89929911223956,0 -106.9622699642244,38.89931795245894,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="085FD4456D3DA76B7AE6">
+		<name>Warming House Hill Air Drain</name>
+		<LookAt>
+			<longitude>-106.9655554296125</longitude>
+			<latitude>38.89928940066758</latitude>
+			<altitude>2857.204693563079</altitude>
+			<heading>34.0819002048171</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>78.30564691377732</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9655248024833,38.89913378333971,2856.668940579752</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0E2EB2DCE53DA76BB39B">
+		<name>Warming House Hill Water Drain</name>
+		<LookAt>
+			<longitude>-106.9655554296125</longitude>
+			<latitude>38.89928940066758</latitude>
+			<altitude>2857.204693563079</altitude>
+			<heading>34.0819002048171</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>78.30564691377732</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9655165993998,38.89913182259589,2856.662856614117</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="038171795E3DA770B64E">
+		<name>Mueller&apos;s Way Air</name>
+		<LookAt>
+			<longitude>-106.9624369446055</longitude>
+			<latitude>38.8987393408885</latitude>
+			<altitude>2904.195086755684</altitude>
+			<heading>34.08405807650005</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>89.8260900587502</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_026428FA773DA743DFC3</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9642483052748,38.89949031437219,0 -106.9645152311659,38.898807734938,0 -106.9646973646084,38.89854403575681,0 -106.9651454139907,38.89845253234062,0 -106.9646950303619,38.89854402091019,0 -106.9641902311353,38.8986219530135,0 -106.9637771227085,38.89862179184161,0 -106.9631335882689,38.89869129417004,0 -106.9626608338449,38.89868814698011,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="08769842C63DA771D954">
+		<name>Mueller&apos;s Way Water</name>
+		<LookAt>
+			<longitude>-106.9626339747852</longitude>
+			<latitude>38.89868937604166</latitude>
+			<altitude>2903.804427268806</altitude>
+			<heading>34.08395353655608</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>24.99455221478002</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9642473155517,38.89948659273497,0 -106.9645128977732,38.89880596802013,0 -106.9646950953382,38.89854494950839,0 -106.9651446864816,38.8984509127967,0 -106.96469420027,38.89854453967752,0 -106.9641892964013,38.89861980482763,0 -106.9637686736267,38.89862031115582,0 -106.9631335999929,38.89868977883086,0 -106.9626604556793,38.89868624538474,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="041D057A7E3DA7733ED0">
+		<name>Peachtree Water</name>
+		<LookAt>
+			<longitude>-106.9633073461276</longitude>
+			<latitude>38.89765300985729</latitude>
+			<altitude>2890.57861642437</altitude>
+			<heading>34.08397194778927</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>71.6171769729317</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9647306186542,38.89853475188826,0 -106.9643297672014,38.89812757536911,0 -106.9643003264432,38.89760805347365,0 -106.9642206228865,38.89745930930078,0 -106.964192413583,38.89746713249492,0 -106.9637711941024,38.89773074206758,0 -106.9634681450786,38.8977231059923,0 -106.963314274288,38.89767516242669,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0B3A1999473DA7742147">
+		<name>Peachtree Air</name>
+		<LookAt>
+			<longitude>-106.9634549085178</longitude>
+			<latitude>38.89772848428707</latitude>
+			<altitude>2889.346773410377</altitude>
+			<heading>34.0838835630086</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>48.71772618867908</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_026428FA773DA743DFC3</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9647259252218,38.89853728303708,0 -106.9643255064665,38.89812896150153,0 -106.9642962080562,38.89760887538985,0 -106.9642174791563,38.89746466224307,0 -106.9637704075778,38.89773375570208,0 -106.9634667422697,38.89772648599515,0 -106.9633128401341,38.89767866169753,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="049C69F6273DA7765EAB">
+		<name>Peachtree Water</name>
+		<LookAt>
+			<longitude>-106.9657969363033</longitude>
+			<latitude>38.89579150886848</latitude>
+			<altitude>2833.066077536236</altitude>
+			<heading>56.20380653207623</heading>
+			<tilt>69.93670132250713</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>71.01825042227576</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9642212361064,38.89745962117623,0 -106.9643237746144,38.89733025563874,0 -106.964426512633,38.89727696629171,0 -106.9647385474311,38.89710840992059,0 -106.9649354035149,38.8968715251882,0 -106.9658691122565,38.89636959069785,0 -106.9662800560742,38.89613920042354,0 -106.9661292644814,38.89591364804895,0 -106.9659542508932,38.89565810233185,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="045849757F3DA776F1F4">
+		<name>Peachtree Air</name>
+		<LookAt>
+			<longitude>-106.9655478870321</longitude>
+			<latitude>38.89634817615695</latitude>
+			<altitude>2841.39820920366</altitude>
+			<heading>56.20458495869899</heading>
+			<tilt>68.46243187861759</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>208.0356884806679</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_026428FA773DA743DFC3</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9642149630237,38.89747042936999,0 -106.9643291873945,38.89733234252637,0 -106.9647554887831,38.89710913582774,0 -106.9649567972679,38.8968771584593,0 -106.9662999304814,38.89613521208963,0 -106.9659558022812,38.89565865046113,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0CDF2033D63DA7775C3F">
+		<name>Peachtree Water Drain</name>
+		<LookAt>
+			<longitude>-106.9658181556771</longitude>
+			<latitude>38.89575236160563</latitude>
+			<altitude>2832.545911914288</altitude>
+			<heading>56.20373596732232</heading>
+			<tilt>68.4462176820057</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>65.53332947778472</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9659571387898,38.89565562895586,2831.16846266312</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="053715D3803DA77794A0">
+		<name>Peachtree Air Drain</name>
+		<LookAt>
+			<longitude>-106.9658181556771</longitude>
+			<latitude>38.89575236160563</latitude>
+			<altitude>2832.545911914288</altitude>
+			<heading>56.20373596732232</heading>
+			<tilt>68.4462176820057</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>65.53332947778472</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9659571387898,38.89565562895586,2831.16846266312</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0402D447E33DA7782C50">
+		<name>Ski School Water Isolation</name>
+		<LookAt>
+			<longitude>-106.9642410391735</longitude>
+			<latitude>38.89781816543793</latitude>
+			<altitude>2876.681457104676</altitude>
+			<heading>56.20527030806552</heading>
+			<tilt>62.95296813607643</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>87.53714567317729</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9643039701448,38.89761256409002,2873.748262814269</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="090FD161F33DA778FAB4">
+		<name>Ski School Water</name>
+		<LookAt>
+			<longitude>-106.9649983031734</longitude>
+			<latitude>38.89735805089526</latitude>
+			<altitude>2861.268304531253</altitude>
+			<heading>56.20479479987022</heading>
+			<tilt>62.95323950866671</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>121.4330867912759</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9643033729467,38.89761388519832,0 -106.9648598622179,38.89769544714999,0 -106.9649639783849,38.89769933156804,0 -106.9651392930278,38.89814852353157,0 -106.9649649383599,38.89769584920929,0 -106.9650381799533,38.89729604607283,0 -106.9651196910172,38.89713951735402,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="06FBEA74A23DA77932F4">
+		<name>Ski School Water Drain</name>
+		<LookAt>
+			<longitude>-106.9649975472685</longitude>
+			<latitude>38.89735923367321</latitude>
+			<altitude>2861.292394617025</altitude>
+			<heading>56.20479527452468</heading>
+			<tilt>62.95323908470951</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>121.3801259767388</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9651215876065,38.89713583467424,2856.537976193991</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0BC060862F3DA7796289">
+		<name>Ski School Air Drain</name>
+		<LookAt>
+			<longitude>-106.9649975472685</longitude>
+			<latitude>38.89735923367321</latitude>
+			<altitude>2861.292394617025</altitude>
+			<heading>56.20479527452468</heading>
+			<tilt>62.95323908470951</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>121.3801259767388</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9651257111574,38.89713156649981,2856.450998543186</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="07DC5519643DA779A7F0">
+		<name>Ski School Water Low Spot Drain</name>
+		<LookAt>
+			<longitude>-106.9649172772816</longitude>
+			<latitude>38.89774784347358</latitude>
+			<altitude>2865.154976540244</altitude>
+			<heading>56.20484567774926</heading>
+			<tilt>62.95317107746653</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>112.8856632881798</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9649713543462,38.89769534500147,2863.822932975791</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="079776B1873DA77A4E31">
+		<name>Ski School Air</name>
+		<LookAt>
+			<longitude>-106.9650802026452</longitude>
+			<latitude>38.89746204628767</latitude>
+			<altitude>2860.103309858734</altitude>
+			<heading>56.20474337100432</heading>
+			<tilt>62.95326002048861</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>123.9951154469054</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_026428FA773DA743DFC3</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9643018689827,38.89761098491055,0 -106.9649634155909,38.89769342834631,0 -106.9651419766966,38.89815279497498,0 -106.9649630902764,38.89769062621517,0 -106.9650355486445,38.89729255202197,0 -106.9651162044359,38.89713444720719,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0318A0EF793DA77C2930">
+		<name>Aspen Clear Cut Water</name>
+		<LookAt>
+			<longitude>-106.9609018254893</longitude>
+			<latitude>38.89814885791895</latitude>
+			<altitude>2921.74099552553</altitude>
+			<heading>52.63261303636122</heading>
+			<tilt>5.692707140360192</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>111.0130407367069</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9642202818014,38.8974587437259,0 -106.9640321249851,38.89722125374973,0 -106.9635168241295,38.89683181417922,0 -106.9634255664039,38.89669623080364,0 -106.9631626901363,38.89687772946652,0 -106.9628954476721,38.8970650864529,0 -106.9625042287953,38.89733814487113,0 -106.9619846239801,38.89760852131516,0 -106.9615143152886,38.89779691192992,0 -106.9612404588107,38.89782908067441,0 -106.9608065343857,38.89797388136533,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0BDEE607693DA77D0567">
+		<name>Aspen Clear Cut Air</name>
+		<LookAt>
+			<longitude>-106.9641583278825</longitude>
+			<latitude>38.89747483255133</latitude>
+			<altitude>2874.766716380634</altitude>
+			<heading>52.63059699702016</heading>
+			<tilt>5.692646508733759</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>43.01279188226545</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_026428FA773DA743DFC3</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9608041210355,38.89798016744042,0 -106.9612417565112,38.89783409284386,0 -106.9615254773269,38.89779845574498,0 -106.961985068904,38.8976128401981,0 -106.9625105888255,38.89734029777111,0 -106.963423875503,38.89670485718336,0 -106.9635051406195,38.89683168227908,0 -106.9640239973947,38.89722413989421,0 -106.96421749212,38.89746593863107,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="067A56F6233DA77D5B99">
+		<name>Rustler&apos;s Low Spot Air Drain</name>
+		<LookAt>
+			<longitude>-106.9634417821867</longitude>
+			<latitude>38.8968540268532</latitude>
+			<altitude>2878.884305069199</altitude>
+			<heading>52.63109155517392</heading>
+			<tilt>5.69264360321466</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>39.75433141267332</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.963505775438,38.89683054452997,2877.6292504477</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0AB686E99E3DA77DB854">
+		<name>Rustler&apos;s Low Spot Water Drain</name>
+		<LookAt>
+			<longitude>-106.9634417821867</longitude>
+			<latitude>38.8968540268532</latitude>
+			<altitude>2878.884305069199</altitude>
+			<heading>52.63109155517392</heading>
+			<tilt>5.69264360321466</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>39.75433141267332</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9635136726254,38.8968290442794,2877.496597642295</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0917CB5BEE3DA77E121E">
+		<name>Air Up Aspen Clear Cut</name>
+		<LookAt>
+			<longitude>-106.9633711522738</longitude>
+			<latitude>38.89675423631957</latitude>
+			<altitude>2881.005679994862</altitude>
+			<heading>52.63113590490784</heading>
+			<tilt>5.692641702317909</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>37.62244133756212</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9634234453136,38.8967053911335,2880.125051610014</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0F9C41464C3DA77E66D9">
+		<name>Water up Aspen Clear Cut</name>
+		<LookAt>
+			<longitude>-106.9633711522738</longitude>
+			<latitude>38.89675423631957</latitude>
+			<altitude>2881.005679994862</altitude>
+			<heading>52.63113590490784</heading>
+			<tilt>5.692641702317909</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>37.62244133756212</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9634251856568,38.89669613957524,2880.156828830109</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="00B4F2FB813DA77EE0A4">
+		<name>Air Down Aspen Clear Cut</name>
+		<LookAt>
+			<longitude>-106.9608055965017</longitude>
+			<latitude>38.89805649264702</latitude>
+			<altitude>2925.068396086645</altitude>
+			<heading>52.63284299625033</heading>
+			<tilt>5.692656364285837</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>54.06679163452282</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9608078293799,38.89797907259354,2925.782915978399</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0CB0B9A54A3DA77F1C3B">
+		<name>Water Down Aspen Clear Cut</name>
+		<LookAt>
+			<longitude>-106.9608055965017</longitude>
+			<latitude>38.89805649264702</latitude>
+			<altitude>2925.068396086645</altitude>
+			<heading>52.63284299625033</heading>
+			<tilt>5.692656364285837</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>54.06679163452282</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9608066464112,38.89797248891684,2925.846568472115</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="06E7B3D61C3DA77FC721">
+		<name>Buckley Air Isolation (Abandoned)</name>
+		<LookAt>
+			<longitude>-106.9640025455319</longitude>
+			<latitude>38.89729558978352</latitude>
+			<altitude>2875.88478660699</altitude>
+			<heading>52.6310753828968</heading>
+			<tilt>5.692679019594562</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>79.47498577347687</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9641388683162,38.89736762370634,2874.12011803214</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0F02AD22AE3DA781CB58">
+		<name>Lower International Water</name>
+		<LookAt>
+			<longitude>-106.9548316615979</longitude>
+			<latitude>38.89432052424163</latitude>
+			<altitude>3090.818704403463</altitude>
+			<heading>52.63699830217266</heading>
+			<tilt>5.455218731160058</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>69.05595373887992</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9626606845469,38.89868584300365,0 -106.9620338288814,38.8985718798214,0 -106.9616678044455,38.89846801490162,0 -106.9613101026544,38.89822807992465,0 -106.9607984820608,38.89797315062051,0 -106.960203470532,38.89762823002144,0 -106.9601207578229,38.89751296560596,0 -106.9593860697373,38.89710255764169,0 -106.9589773171182,38.89689968094086,0 -106.9583969687706,38.89663822391837,0 -106.9576141822069,38.8963006452683,0 -106.9572745801072,38.89617292881885,0 -106.9567752212941,38.89591705614151,0 -106.9563949032592,38.89572939591528,0 -106.9557443630126,38.89532828610844,0 -106.9554482146359,38.89500148706887,0 -106.9552061896389,38.89478271385578,0 -106.9550619707668,38.89458814866124,0 -106.954855580682,38.89436115482594,0 -106.9547549227588,38.89419237613392,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="038E29A5DF3DA7821441">
+		<name>Koch&apos;s Water</name>
+		<LookAt>
+			<longitude>-106.9548316615979</longitude>
+			<latitude>38.89432052424163</latitude>
+			<altitude>3090.818704403463</altitude>
+			<heading>52.63699830217266</heading>
+			<tilt>5.455218731160058</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>69.05595373887992</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9547571100299,38.89419320830557,3090.822752448148</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="034708E14F3DA7824AC3">
+		<name>Koch&apos;s Air</name>
+		<LookAt>
+			<longitude>-106.9547899884363</longitude>
+			<latitude>38.89425634361273</latitude>
+			<altitude>3090.782716814852</altitude>
+			<heading>52.63697860705913</heading>
+			<tilt>5.455188014633705</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>33.1108318089855</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9547526582683,38.89419495537668,3090.896795397129</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="08AA002BC83DA785B46E">
+		<name>Lower International Air</name>
+		<LookAt>
+			<longitude>-106.9546218312393</longitude>
+			<latitude>38.89442781067432</latitude>
+			<altitude>3095.889727890181</altitude>
+			<heading>336.1834101684249</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>110.6027740504396</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_026428FA773DA743DFC3</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9626605060113,38.89868864217446,0 -106.9618623870568,38.89852677820777,0 -106.9616652530417,38.89846897426866,0 -106.9613078244718,38.898229880641,0 -106.9608041467684,38.89797952142651,0 -106.960201043448,38.89762937890028,0 -106.9601187185403,38.89751424679837,0 -106.9581219800539,38.89652291439615,0 -106.9575660337097,38.89628778075398,0 -106.9572691869601,38.89617285155151,0 -106.9567764647776,38.89591923207247,0 -106.9563904323662,38.89573041505046,0 -106.956056135322,38.89552270760588,0 -106.9557428242507,38.89533667933635,0 -106.9554438378221,38.89500303437185,0 -106.9552256067616,38.89481420691468,0 -106.9547520246688,38.89420360325721,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0ACE78D6303DA78725B4">
+		<name>Spruce Carpet Spur Air</name>
+		<LookAt>
+			<longitude>-106.9645208151905</longitude>
+			<latitude>38.8996516504586</latitude>
+			<altitude>2866.011245296459</altitude>
+			<heading>336.1702114633773</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>94.5930327134738</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_026428FA773DA743DFC3</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9645992813169,38.89952499469755,0 -106.9644432148047,38.89980701907695,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0A82C99CD03DA787A70B">
+		<name>Spruce Carpet Spur Water</name>
+		<LookAt>
+			<longitude>-106.9643937915792</longitude>
+			<latitude>38.89982851130135</latitude>
+			<altitude>2867.081147941642</altitude>
+			<heading>336.170302421921</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>51.82931890272812</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9645990567506,38.89952112766537,0 -106.9644404838484,38.89980554262193,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="01005928463DA78D6548">
+		<name>Upper International Water</name>
+		<LookAt>
+			<longitude>-106.9456680560753</longitude>
+			<latitude>38.8915415454527</latitude>
+			<altitude>3343.837970511511</altitude>
+			<heading>336.1828428088397</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>219.3895136582432</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9547576272019,38.89419427956751,0 -106.9543229060448,38.89387794750996,0 -106.9539642786892,38.89353720788695,0 -106.9530876738731,38.89328053085378,0 -106.9528457450825,38.89274873960991,0 -106.9523738483659,38.89254978975961,0 -106.9514036298272,38.89223698431508,0 -106.9510565994488,38.89211789511371,0 -106.950189696664,38.89178314365314,0 -106.9500222705937,38.89171429851584,0 -106.9497541958606,38.89160857420548,0 -106.9492273890254,38.89123285858365,0 -106.9488593960963,38.89095619539907,0 -106.9481162248781,38.89077507053945,0 -106.9476852585118,38.8907955378324,0 -106.9473340453454,38.89080681868786,0 -106.9469702435084,38.89100718414342,0 -106.9463464616941,38.89115438157502,0 -106.9457280243957,38.89129888028176,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="079C66B45F3DA78EA1F7">
+		<name>Upper International Air</name>
+		<LookAt>
+			<longitude>-106.9460116231834</longitude>
+			<latitude>38.89122404253354</latitude>
+			<altitude>3349.444677223829</altitude>
+			<heading>336.1817386593041</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>156.6238097312089</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_026428FA773DA743DFC3</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9547517938097,38.89419538734226,0 -106.9543164567655,38.89387778727522,0 -106.9539607982456,38.89354099691134,0 -106.9530833074658,38.89328249351321,0 -106.9528379128196,38.89275076454967,0 -106.9523517568493,38.89255542999506,0 -106.9509891086412,38.89211636357646,0 -106.9497477451621,38.89161184535445,0 -106.9488575871508,38.89096099775855,0 -106.9481167229728,38.89078507583595,0 -106.9473418463454,38.89081710085296,0 -106.9469750788991,38.89101549164354,0 -106.9457257128171,38.89130808604829,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0613F8DBE23DA790AF96">
+		<name>Upper Park to Windy Gap Air</name>
+		<LookAt>
+			<longitude>-106.9489350775634</longitude>
+			<latitude>38.89662068830983</latitude>
+			<altitude>3131.355192452721</altitude>
+			<heading>357.3098737649898</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>119.1636869163631</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_026428FA773DA743DFC3</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9435729756086,38.88753324371145,0 -106.9440345042911,38.88796961693337,0 -106.9442780899235,38.8884018272168,0 -106.9445783610019,38.8888853755793,0 -106.9449175515262,38.88958662472402,0 -106.9448025426387,38.89014916551419,0 -106.9447185293923,38.89058763247956,0 -106.9446048001649,38.8910884321165,0 -106.9447029813974,38.89145245982208,0 -106.9457270164996,38.89130769165783,0 -106.9446999857076,38.89145272270353,0 -106.9448283494454,38.89326207418635,0 -106.9450491997981,38.89367535441755,0 -106.9452430244329,38.89381680132522,0 -106.9455252299504,38.89368415951866,0 -106.9459113527508,38.89363754596377,0 -106.9464688527924,38.89365706673548,0 -106.9466149350502,38.89366051039047,0 -106.9468942175107,38.89434893869616,0 -106.9474657227576,38.8949892984111,0 -106.9482512497798,38.89560257128916,0 -106.9488112532747,38.89609771799346,0 -106.9492469397801,38.89650106321932,0 -106.9490315452556,38.89651469989951,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="054CE5BC203DA7928D74">
+		<name>Upper Park Through Windy Gap Water</name>
+		<LookAt>
+			<longitude>-106.9435325809714</longitude>
+			<latitude>38.88756331922064</latitude>
+			<altitude>3495.26773006143</altitude>
+			<heading>357.3098502884147</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>73.90401219696288</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9490339125874,38.896520361912,0 -106.9492512834048,38.8965038535347,0 -106.9474772447424,38.89498410612462,0 -106.9469055626066,38.8943484870484,0 -106.9466201736528,38.89365704575161,0 -106.9459112440837,38.89363398392907,0 -106.9455261469864,38.89367848237919,0 -106.945242895448,38.89381255592362,0 -106.945052311526,38.89367279418386,0 -106.944834382887,38.89326271122417,0 -106.9447062848863,38.89145632682709,0 -106.9457288004768,38.89129882708219,0 -106.9447056827168,38.89145640594558,0 -106.9446084368454,38.89108868401164,0 -106.9449213701216,38.8895840610363,0 -106.9445864168293,38.8888840916496,0 -106.9440439544677,38.88796711241089,0 -106.9435784690479,38.88753155053745,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="06A2537D333DA79435C0">
+		<name>Upper Park/Peanut/Weather Station Flats Water</name>
+		<LookAt>
+			<longitude>-106.9532438592777</longitude>
+			<latitude>38.89338385640055</latitude>
+			<altitude>3107.488136433506</altitude>
+			<heading>357.3098290713078</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>46.53167875546387</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9486825412538,38.89601415189226,0 -106.9491497803419,38.89592053345449,0 -106.949568331383,38.89605554346132,0 -106.9502177709804,38.8962120782213,0 -106.9505825012484,38.89623232245408,0 -106.9514684442054,38.89618093547413,0 -106.9518453683247,38.8961351004268,0 -106.9520632893474,38.89613460486181,0 -106.9522593702387,38.89623989666414,0 -106.9523758251781,38.89633044534956,0 -106.9528331456222,38.89615089015598,0 -106.952815800623,38.89579363710365,0 -106.9528502720887,38.8953088983593,0 -106.9526935369945,38.89483907198768,0 -106.9528808088963,38.89440698510384,0 -106.9530518670205,38.8937860548648,0 -106.9532140505213,38.89331665668671,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0F57DC5A983DA7956906">
+		<name>Upper Park/Peanut/Weather Station Flats Air</name>
+		<LookAt>
+			<longitude>-106.9490567519569</longitude>
+			<latitude>38.89623209050056</latitude>
+			<altitude>3132.766293314722</altitude>
+			<heading>357.3098200316231</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>121.3186589832367</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_026428FA773DA743DFC3</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9532143513059,38.89332177897156,0 -106.9528911143466,38.89440990753172,0 -106.9527058224891,38.8948412814627,0 -106.9528645043831,38.8953171989003,0 -106.9528411107247,38.89615189733892,0 -106.9523641440878,38.89633739247107,0 -106.9520640909851,38.8961430617429,0 -106.9518493166832,38.89614458852271,0 -106.9514673403581,38.89618907332793,0 -106.9505860052191,38.89623941543901,0 -106.9502169988232,38.89621850994619,0 -106.949548392695,38.89606214520291,0 -106.9491487750837,38.89592752126032,0 -106.9487153855344,38.89601655795065,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0643D170BA3DA795DDE0">
+		<name>Peanut Low Spot Water Drain</name>
+		<LookAt>
+			<longitude>-106.951254054962</longitude>
+			<latitude>38.89622837780507</latitude>
+			<altitude>3106.542685627985</altitude>
+			<heading>357.3098179718933</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>27.14301137623352</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9512515528107,38.89619389172141,3107.439340632442</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="07C18CA58E3DA7966224">
+		<name>Lower Twister Water Isolation Valve</name>
+		<LookAt>
+			<longitude>-106.9519021026517</longitude>
+			<latitude>38.89619917120709</latitude>
+			<altitude>3102.728954902046</altitude>
+			<heading>357.3098139543863</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>88.92079620535698</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9519177929545,38.89605934557029,3105.501216034913</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="07AE11651D3DA796CF29">
+		<name>Lower Twister Air Isolation Valve</name>
+		<LookAt>
+			<longitude>-106.9519022585173</longitude>
+			<latitude>38.8962017528974</latitude>
+			<altitude>3102.670928033544</altitude>
+			<heading>357.3098138959944</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>88.97881553095432</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9519320389085,38.89606469107315,3105.197782316852</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0700FE476A3DA798469F">
+		<name>Lower Twister Air</name>
+		<LookAt>
+			<longitude>-106.9615431944204</longitude>
+			<latitude>38.8990971703869</latitude>
+			<altitude>2912.10282300245</altitude>
+			<heading>-13.07987213959771</heading>
+			<tilt>6.644320798427101</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>91.01963792098104</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_026428FA773DA743DFC3</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.951932920273,38.89606722625356,0 -106.9523715759948,38.89632867758417,0 -106.9527159673274,38.89657811594768,0 -106.9529283445273,38.89687613909429,0 -106.9531602419597,38.89717109453053,0 -106.9532679368657,38.89740798593643,0 -106.9535067024614,38.89766719820653,0 -106.9537318286561,38.89793594506969,0 -106.9539774195538,38.89816659798122,0 -106.954061760304,38.89829514135374,0 -106.9542824673191,38.89838835203827,0 -106.9545330895057,38.89859143706612,0 -106.9551472794326,38.8989098167245,0 -106.9557244966188,38.89886754252621,0 -106.957512524169,38.89877666219726,0 -106.9596939617282,38.89893362224492,0 -106.9603987691682,38.89892193446801,0 -106.96171292743,38.89911460198665,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0AEA3ECFEE3DA7987111">
+		<name>Lower Twister Air Drain</name>
+		<LookAt>
+			<longitude>-106.9615431944204</longitude>
+			<latitude>38.8990971703869</latitude>
+			<altitude>2912.10282300245</altitude>
+			<heading>-13.07987213959771</heading>
+			<tilt>6.644320798427101</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>91.01963792098104</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9617136749289,38.89911208935261,2910.90339117616</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0C8B99433A3DA798A569">
+		<name>Lower Twister Water Drain</name>
+		<LookAt>
+			<longitude>-106.9615431944204</longitude>
+			<latitude>38.8990971703869</latitude>
+			<altitude>2912.10282300245</altitude>
+			<heading>-13.07987213959771</heading>
+			<tilt>6.644320798427101</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>91.01963792098104</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9617136749289,38.89911208935261,2910.903393532964</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0C43E3D7363DA79A7726">
+		<name>Lower Twister Water</name>
+		<LookAt>
+			<longitude>-106.9520144084481</longitude>
+			<latitude>38.89613544955211</latitude>
+			<altitude>3102.67382379618</altitude>
+			<heading>-90.82968648507071</heading>
+			<tilt>26.33127345569289</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>60.20547153535517</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.961713826636,38.89911983067444,0 -106.9603984800831,38.89892486648831,0 -106.9596964769189,38.89893748203907,0 -106.9575085036515,38.89877926800552,0 -106.9551427726052,38.89891399626551,0 -106.9545238276349,38.89859404518129,0 -106.9542774589895,38.89839174508784,0 -106.9540521810758,38.89829541961716,0 -106.9539702863093,38.89816844415625,0 -106.9537292679428,38.89793652803642,0 -106.9534738406708,38.89763487492102,0 -106.9532626720813,38.89740731245649,0 -106.9531563607028,38.8971698739519,0 -106.9527139824956,38.89658025029497,0 -106.9523783158609,38.89633028565385,0 -106.9519223196898,38.8960581956005,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="090B334A043DA79D0DAC">
+		<name>Peanut Water</name>
+		<LookAt>
+			<longitude>-106.941840660356</longitude>
+			<latitude>38.89641379242447</latitude>
+			<altitude>3145.534157863366</altitude>
+			<heading>-20.99603944311129</heading>
+			<tilt>15.4936270550384</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>53.08133225934399</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9489855695402,38.89654358190868,0 -106.949044864817,38.89660184974712,0 -106.9487912803218,38.89676349045494,0 -106.9483722592162,38.8969842642333,0 -106.9481479700076,38.89706796596921,0 -106.9474304502821,38.89727926471009,0 -106.9465512285465,38.89760276865849,0 -106.9456555776563,38.89754520356829,0 -106.9446053319979,38.89761050772222,0 -106.9440340705709,38.89778611205269,0 -106.9435992347149,38.89848338580118,0 -106.9431350598827,38.89899520738364,0 -106.9428772025276,38.89910957515187,0 -106.9425210458457,38.89921846924538,0 -106.9423593032794,38.89826603492436,0 -106.9424579556134,38.89789079745266,0 -106.9425822151588,38.89745415908496,0 -106.9426255656385,38.89697735147457,0 -106.9423285668031,38.89674163998527,0 -106.9418824079271,38.89642722816316,0 -106.9417488983663,38.89637453109876,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0EC384C1CE3DA79E8F40">
+		<name>Peanut Air</name>
+		<LookAt>
+			<longitude>-106.9487008229358</longitude>
+			<latitude>38.8966667838124</latitude>
+			<altitude>3131.717735180236</altitude>
+			<heading>-1.424041012489825</heading>
+			<tilt>44.78234636933716</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>120.4894919549406</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_026428FA773DA743DFC3</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9417446507824,38.89637560816886,0 -106.941873988452,38.89643048666376,0 -106.9426178875602,38.89697998051412,0 -106.9426835697887,38.89714414288443,0 -106.9426784542144,38.89735920600836,0 -106.9423654876078,38.89825991630633,0 -106.9425252549693,38.89921535374049,0 -106.943130951112,38.89898982305133,0 -106.9440291942532,38.89778438452437,0 -106.9446101046951,38.89759595023317,0 -106.9456586489038,38.89754103412466,0 -106.9465505927437,38.89759726570716,0 -106.9472814485572,38.89732351335368,0 -106.9484784466589,38.89691721584896,0 -106.9490296460682,38.89659194124776,0 -106.9489830312445,38.89654512783305,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0A77A2A51F3DA7A02C8E">
+		<name>East River Air</name>
+		<LookAt>
+			<longitude>-106.9331821832383</longitude>
+			<latitude>38.89848515803182</latitude>
+			<altitude>3073.685485333905</altitude>
+			<heading>1.798865883554233</heading>
+			<tilt>52.40695584362034</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>149.6895703211521</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_026428FA773DA743DFC3</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9417431525175,38.8963754315239,0 -106.9413415739243,38.89598899854071,0 -106.9408397084694,38.89583990191863,0 -106.9404649603476,38.89581500342209,0 -106.9398564451556,38.89634003345135,0 -106.9391377525081,38.89689266057304,0 -106.938270603851,38.89749896965147,0 -106.9370188275471,38.89826132591272,0 -106.9355517964499,38.90016367616297,0 -106.9355503523718,38.90032280551453,0 -106.9349867325688,38.89996468305826,0 -106.9342823686945,38.89907467729501,0 -106.9338746856988,38.89871049183473,0 -106.9334113005565,38.89841258458339,0 -106.9324146464222,38.89812894108316,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="04DB8383983DA7A149DB">
+		<name>Lower Treasury Air</name>
+		<LookAt>
+			<longitude>-106.9273018130587</longitude>
+			<latitude>38.90621121225596</latitude>
+			<altitude>2786.672942295281</altitude>
+			<heading>1.798786808811369</heading>
+			<tilt>52.40668495292803</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>111.6519080854596</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_026428FA773DA743DFC3</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9355500907603,38.90032252558549,0 -106.9355308546118,38.90055262014197,0 -106.9353295792267,38.90101211522362,0 -106.9350645521775,38.90135630173587,0 -106.934805856312,38.90133145489921,0 -106.9346791956976,38.90125655345854,0 -106.9340940960738,38.90130930699277,0 -106.9338119017137,38.90130860420093,0 -106.933298497406,38.9015621508733,0 -106.9331292126759,38.90163727185396,0 -106.9328695128913,38.90185141968993,0 -106.9313719509317,38.90324422874174,0 -106.930525953318,38.90351716823408,0 -106.9272212158461,38.90601142756309,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="09B94329683DA7A17D74">
+		<name>Lower Treasury Air Drain</name>
+		<LookAt>
+			<longitude>-106.9273018130587</longitude>
+			<latitude>38.90621121225596</latitude>
+			<altitude>2786.672942295281</altitude>
+			<heading>1.798786808811369</heading>
+			<tilt>52.40668495292803</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>111.6519080854596</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9272201260668,38.90600804743666,2785.871806257631</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0FEF79E4333DA7A1C018">
+		<name>Lower Treasury Water Drain</name>
+		<LookAt>
+			<longitude>-106.9273018130587</longitude>
+			<latitude>38.90621121225596</latitude>
+			<altitude>2786.672942295281</altitude>
+			<heading>1.798786808811369</heading>
+			<tilt>52.40668495292803</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>111.6519080854596</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9272273176245,38.90600544494613,2786.00780681574</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0F9250CC7E3DA7A34B1E">
+		<name>Lower Treasury Water</name>
+		<LookAt>
+			<longitude>-106.9352277389917</longitude>
+			<latitude>38.90047262673832</latitude>
+			<altitude>3023.507796814183</altitude>
+			<heading>57.09899265917219</heading>
+			<tilt>57.63749474571746</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>143.352061384212</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9272269229945,38.90601464070573,0 -106.9285911480382,38.90499012182884,0 -106.9296019369316,38.90424269319673,0 -106.9305360097364,38.90352977401306,0 -106.9308195974088,38.90343549498819,0 -106.9313868728646,38.90325859963085,0 -106.9328165357906,38.90192476044257,0 -106.9331361945074,38.90164949385333,0 -106.9334703871914,38.90148415853565,0 -106.9336256571488,38.90140938435582,0 -106.9338090475547,38.90131705782557,0 -106.9340794416779,38.9013172067585,0 -106.9346739880276,38.90126747990289,0 -106.9348036404029,38.90134240659847,0 -106.9350643729345,38.90136328647348,0 -106.9353354721984,38.90101506755143,0 -106.9355644818901,38.9003195665108,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="060265C0223DA7A3A2A1">
+		<name>Lower Treasury Water Isolation</name>
+		<LookAt>
+			<longitude>-106.9348447697884</longitude>
+			<latitude>38.90162654126978</latitude>
+			<altitude>3024.189827599402</altitude>
+			<heading>57.09923315810703</heading>
+			<tilt>57.63748507131355</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>142.0779076258077</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9350617751644,38.90135638893144,3025.335507327574</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="038DD71A0A3DA7A3DEA1">
+		<name>Lower Treasury Air Isolation</name>
+		<LookAt>
+			<longitude>-106.9348447697884</longitude>
+			<latitude>38.90162654126978</latitude>
+			<altitude>3024.189827599402</altitude>
+			<heading>57.09923315810703</heading>
+			<tilt>57.63748507131355</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>142.0779076258077</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9350655447185,38.90135090633756,3025.373925583453</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0DA56D18C73DA7A4416C">
+		<name>Daisy Water Isolation</name>
+		<LookAt>
+			<longitude>-106.9351768073485</longitude>
+			<latitude>38.90053075805682</latitude>
+			<altitude>3021.508657262731</altitude>
+			<heading>57.09864225864396</heading>
+			<tilt>57.63118348141428</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>97.3767203405805</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9355624790722,38.9003220744905,3031.778958694578</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="00CC74E8D33DA7A539A4">
+		<name>East River Water</name>
+		<LookAt>
+			<longitude>-106.9325647219553</longitude>
+			<latitude>38.89829688264278</latitude>
+			<altitude>3086.344616764272</altitude>
+			<heading>57.10058641598636</heading>
+			<tilt>28.37132679122825</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>105.0503019926145</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9355623503607,38.90032117445553,0 -106.9354334661148,38.90023429145242,0 -106.9349927305549,38.89996114820394,0 -106.9344857405286,38.8993208820535,0 -106.9342892359771,38.89906516329273,0 -106.9340395361705,38.89885147755352,0 -106.9339677027439,38.89878870541676,0 -106.9338770822499,38.89870780023157,0 -106.9337301031971,38.89861540271308,0 -106.9335751403067,38.89851444145653,0 -106.9334133265102,38.89840880207449,0 -106.9324151534687,38.89812428415329,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="03F0165D143DA7A67B19">
+		<name>East River Water</name>
+		<LookAt>
+			<longitude>-106.9415322562122</longitude>
+			<latitude>38.89624987341877</latitude>
+			<altitude>3146.718697835918</altitude>
+			<heading>57.09490656838974</heading>
+			<tilt>17.80548451654903</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>73.78031914357962</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9355647508512,38.90031816615841,0 -106.9355553176269,38.90030785310945,0 -106.9355561019894,38.90016353755708,0 -106.936112904623,38.8994403573193,0 -106.9370207622999,38.89826456589078,0 -106.938276402142,38.89750507300253,0 -106.9401895450657,38.89605912456965,0 -106.9404665922079,38.89581885827084,0 -106.9408378620899,38.89584637412797,0 -106.9413348815614,38.89599326351419,0 -106.9417462682763,38.89637583430564,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0D47303F4A3DA7A7D473">
+		<name>Lower Forest Queen Water</name>
+		<LookAt>
+			<longitude>-106.939230149441</longitude>
+			<latitude>38.90041457252224</latitude>
+			<altitude>3055.66429535777</altitude>
+			<heading>59.72716683441214</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>85.97040948925496</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9417433075709,38.89637714406346,0 -106.9414880340858,38.89640903371451,0 -106.941321913493,38.89664590782444,0 -106.941085812832,38.89690437026905,0 -106.940785815146,38.89714281667597,0 -106.9403878134457,38.89738593155985,0 -106.9398523729396,38.89769400080514,0 -106.9393997371063,38.89800113213536,0 -106.9390979826354,38.89832836798168,0 -106.9390834191529,38.8985677398133,0 -106.9390903323959,38.89894658392835,0 -106.9391394497268,38.90015598355578,0 -106.9393027827024,38.90048284273978,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0B86A69D203DA7A81433">
+		<name>Lower Ruby/ Lower Forest Queen Water Tie In</name>
+		<LookAt>
+			<longitude>-106.939230149441</longitude>
+			<latitude>38.90041457252224</latitude>
+			<altitude>3055.66429535777</altitude>
+			<heading>59.72716683441214</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>85.97040948925496</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.939309470351,38.90048085391251,3057.54928459154</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0F7D46A0533DA7A8A861">
+		<name>Lower Ruby/ Lower Forest Queen Air Tie In</name>
+		<LookAt>
+			<longitude>-106.939230149441</longitude>
+			<latitude>38.90041457252224</latitude>
+			<altitude>3055.66429535777</altitude>
+			<heading>59.72716683441214</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>85.97040948925496</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9393051331106,38.90048289011825,3057.54928459154</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="07415E11313DA7AA8638">
+		<name>Lower Forest Queen Air</name>
+		<LookAt>
+			<longitude>-106.9417261276561</longitude>
+			<latitude>38.89642127388172</latitude>
+			<altitude>3144.236848967389</altitude>
+			<heading>59.72566087467327</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>38.74365770659097</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_026428FA773DA743DFC3</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9393071959971,38.90048171604827,0 -106.9392826871483,38.90043627109934,0 -106.9391442450847,38.90015658402631,0 -106.9390993797434,38.8989250700675,0 -106.9391091781035,38.89833273077272,0 -106.9394059087916,38.89800537926908,0 -106.9398311108591,38.89771954226604,0 -106.9407870002106,38.89714582221281,0 -106.9410914115284,38.89690437604922,0 -106.9414911269221,38.89640990874379,0 -106.9417454618516,38.8963781131059,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0537E2D9F23DA7AB04D8">
+		<name>Lower Canaan Air Isolation</name>
+		<LookAt>
+			<longitude>-106.9391511206209</longitude>
+			<latitude>38.89854155494003</latitude>
+			<altitude>3083.772607461457</altitude>
+			<heading>59.72738254863548</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>48.16142324324574</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9391052175564,38.89847311324684,3082.221525077875</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0E572E067E3DA7AB3C67">
+		<name>Lower Canaan Water Isolation</name>
+		<LookAt>
+			<longitude>-106.9391511206209</longitude>
+			<latitude>38.89854155494003</latitude>
+			<altitude>3083.772607461457</altitude>
+			<heading>59.72738254863548</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>48.16142324324574</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9391085287964,38.89848139276272,3082.221525077875</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="078522AA403DA7AD4877">
+		<name>Lower Ruby Water</name>
+		<LookAt>
+			<longitude>-106.9377755867114</longitude>
+			<latitude>38.90509938558215</latitude>
+			<altitude>2960.348800176571</altitude>
+			<heading>59.72862036851017</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>89.9909465285964</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9424826355919,38.8992124862233,0 -106.9422665919486,38.89910536138456,0 -106.9418244725109,38.89900458990147,0 -106.9414203150018,38.89895211319433,0 -106.9409736959416,38.89898334985085,0 -106.9405456845824,38.89908456495641,0 -106.9402344751283,38.89950635876736,0 -106.9401183593594,38.89976486479756,0 -106.9399015638665,38.89999870907302,0 -106.9395936665969,38.90029774030791,0 -106.9392021202704,38.90055968107131,0 -106.9385751274446,38.9010696855308,0 -106.9379472845162,38.90161232280396,0 -106.9373378318275,38.90224530364992,0 -106.937059621058,38.90263193583695,0 -106.9369638250502,38.90285098448221,0 -106.9370752292398,38.90342063133608,0 -106.9368205616204,38.90400003241098,0 -106.9369610241675,38.90439694802004,0 -106.9372477297472,38.90460766894367,0 -106.9377299370011,38.90480593047416,0 -106.937857298639,38.90490782919622,0 -106.9379151195282,38.90515086293175,0 -106.9378648697095,38.9051766421307,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0A1D8F7A6E3DA7AD7A5C">
+		<name>Lower Ruby Water Drain</name>
+		<LookAt>
+			<longitude>-106.9377755867114</longitude>
+			<latitude>38.90509938558215</latitude>
+			<altitude>2960.348800176571</altitude>
+			<heading>59.72862036851017</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>89.9909465285964</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9378626304156,38.90517904588313,2962.336901976335</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="04F3E7A4383DA7ADB674">
+		<name>Lower Ruby Air Drain</name>
+		<LookAt>
+			<longitude>-106.9377755867114</longitude>
+			<latitude>38.90509938558215</latitude>
+			<altitude>2960.348800176571</altitude>
+			<heading>59.72862036851017</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>89.9909465285964</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9378718456011,38.90518066927457,2962.709223748077</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="093093683A3DA7AF3479">
+		<name>Lower Ruby Air</name>
+		<LookAt>
+			<longitude>-106.9420949925923</longitude>
+			<latitude>38.89913739764943</latitude>
+			<altitude>3118.612265763172</altitude>
+			<heading>24.87981164642695</heading>
+			<tilt>29.97534348556765</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>95.19650786800412</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_026428FA773DA743DFC3</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9378749595538,38.90518016808332,0 -106.9379215223535,38.90515624928975,0 -106.937868015011,38.90490672356042,0 -106.937738110859,38.9048011049219,0 -106.9372511980621,38.90460249544587,0 -106.9369651977913,38.90439383686472,0 -106.9368262500597,38.90400121788349,0 -106.9370828479123,38.90341995813906,0 -106.9369698290768,38.9028491437968,0 -106.9370674568535,38.90263310293233,0 -106.9373408476137,38.90224798943478,0 -106.9379514765887,38.90161255547864,0 -106.9396075840574,38.90029859603579,0 -106.9401255146956,38.89976865507298,0 -106.9402466452035,38.8994999755765,0 -106.9405477342031,38.89908682509679,0 -106.9409760094322,38.89898592586838,0 -106.9414244630608,38.89895854559524,0 -106.9422594821627,38.89910662466529,0 -106.9424747391333,38.89921504801702,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="05B5E2FFE63DA7B17C14">
+		<name>Upper Paradise Air</name>
+		<LookAt>
+			<longitude>-106.9415169827503</longitude>
+			<latitude>38.89283100705297</latitude>
+			<altitude>3260.130877061682</altitude>
+			<heading>24.88191285957826</heading>
+			<tilt>29.97698035266942</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>459.6845729662164</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_026428FA773DA743DFC3</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9417472392115,38.89637359472694,0 -106.941642094153,38.89531713039106,0 -106.9414559503506,38.89426326554346,0 -106.9418131935123,38.89300731898678,0 -106.9418741802826,38.89277153174996,0 -106.9417176988818,38.89260333079596,0 -106.9412592134293,38.89252975573482,0 -106.9404571336539,38.89241121135199,0 -106.9399611626558,38.89217787704851,0 -106.9394381695689,38.8915667695397,0 -106.9391332056947,38.89103605924351,0 -106.9390984205731,38.89067422679557,0 -106.9392007844015,38.89034725411709,0 -106.9393110413892,38.89004071982286,0 -106.9394294183371,38.88979301291992,0 -106.9399669357048,38.88923824173073,0 -106.9402779561599,38.88899745154681,0 -106.9407483709123,38.88878610971578,0 -106.9411097787937,38.88865194372842,0 -106.9415687634394,38.88869279330504,0 -106.9418793510872,38.88884156752943,0 -106.9421032125131,38.88905473817499,0 -106.9420751946488,38.88923154405533,0 -106.9421543146469,38.88949184146644,0 -106.9418078278531,38.89269776503865,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="07BE6E69F33DA7B1D8FC">
+		<name>Upper Canaan Above Ground Spur Air</name>
+		<LookAt>
+			<longitude>-106.941102021901</longitude>
+			<latitude>38.89369370713568</latitude>
+			<altitude>3229.70426739904</altitude>
+			<heading>24.88177899787628</heading>
+			<tilt>29.97595874242507</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>232.1985675892211</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_026428FA773DA743DFC3</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9413327510694,38.89254452187492,0 -106.9413056211718,38.89274986381931,0 -106.9410091350195,38.89369413762506,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0D956E3D4D3DA7B2537B">
+		<name>Upper Canaan Above Ground Spur Water</name>
+		<LookAt>
+			<longitude>-106.9411214068672</longitude>
+			<latitude>38.89346038834422</latitude>
+			<altitude>3238.186940785558</altitude>
+			<heading>24.88176682800344</heading>
+			<tilt>29.97591476337054</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>222.4059623269205</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.941340644957,38.89254126158222,0 -106.9413180715708,38.89275248745574,0 -106.941024087707,38.89369194975833,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="04CD1EE1783DA7B2AD8C">
+		<name>Upper Canaan Above Ground Spur Air Drain</name>
+		<LookAt>
+			<longitude>-106.9411214068672</longitude>
+			<latitude>38.89346038834422</latitude>
+			<altitude>3238.186940785558</altitude>
+			<heading>24.88176682800344</heading>
+			<tilt>29.97591476337054</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>222.4059623269205</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9410128835484,38.89368192667925,3230.340643816503</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0D13B271F43DA7B2F8AC">
+		<name>Upper Canaan Above Ground Spur Water Drain</name>
+		<LookAt>
+			<longitude>-106.9411214068672</longitude>
+			<latitude>38.89346038834422</latitude>
+			<altitude>3238.186940785558</altitude>
+			<heading>24.88176682800344</heading>
+			<tilt>29.97591476337054</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>222.4059623269205</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9410301432379,38.89368521386659,3230.182407376326</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="062B66AEB93DA7B3671E">
+		<name>Upper Canaan Above Ground Spur Water Isolation</name>
+		<LookAt>
+			<longitude>-106.94134001309</longitude>
+			<latitude>38.89260244882092</latitude>
+			<altitude>3266.160355578641</altitude>
+			<heading>24.88141252809013</heading>
+			<tilt>29.69559112649513</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>28.32725922672125</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9413409835692,38.89254217249309,3266.385396161016</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0B165C767E3DA7B3ACF3">
+		<name>Upper Canaan Above Ground Spur Air Isolation</name>
+		<LookAt>
+			<longitude>-106.94134001309</longitude>
+			<latitude>38.89260244882092</latitude>
+			<altitude>3266.160355578641</altitude>
+			<heading>24.88141252809013</heading>
+			<tilt>29.69559112649513</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>28.32725922672125</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9413356146836,38.89254223034793,3266.481637928277</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="021137872B3DA7B5BD21">
+		<name>Upper Paradise Water</name>
+		<LookAt>
+			<longitude>-106.9413139427835</longitude>
+			<latitude>38.89280124231588</latitude>
+			<altitude>3263.56631685179</altitude>
+			<heading>38.29637600581326</heading>
+			<tilt>57.79892986431865</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>143.2007811931908</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9417480320993,38.89637332444503,0 -106.9414619501475,38.89426126630053,0 -106.9415927462041,38.89383364940039,0 -106.9418781611353,38.89276836135252,0 -106.9417220959474,38.89260111775165,0 -106.9412477686641,38.89251915493421,0 -106.9404602251715,38.89240442483973,0 -106.9399669352314,38.89217381191509,0 -106.9394431109642,38.89156621350353,0 -106.9391371854955,38.89103144361336,0 -106.9391020493206,38.89067374903437,0 -106.9394412217676,38.88979636727255,0 -106.9397253853425,38.88954920687127,0 -106.9399896485997,38.88923445953922,0 -106.9402941963502,38.88900055865656,0 -106.9407618599741,38.888788246742,0 -106.9410968885779,38.88866410005268,0 -106.9415006418376,38.88869955946503,0 -106.9415576082376,38.88870929388407,0 -106.9418605072572,38.88885354720379,0 -106.9420859594848,38.88907884197464,0 -106.942034129165,38.88928192224049,0 -106.9421260094901,38.88952690812393,0 -106.9420608725837,38.89023282181882,0 -106.9418827825424,38.89177860745313,0 -106.9417967698613,38.89266202083937,0 -106.941792144132,38.89267655151016,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="024B9B84363DA7B67CAE">
+		<name>Buckley Air Isolation </name>
+		<LookAt>
+			<longitude>-106.9591775025668</longitude>
+			<latitude>38.89717321508748</latitude>
+			<altitude>2985.398413545683</altitude>
+			<heading>38.28567718858141</heading>
+			<tilt>57.79879760597483</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>125.8063984816727</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.959319067409,38.89702053233385,2984.212599726101</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0DE8D337E93DA7B6C681">
+		<name>Buckley Water Isolation</name>
+		<LookAt>
+			<longitude>-106.9591775025668</longitude>
+			<latitude>38.89717321508748</latitude>
+			<altitude>2985.398413545683</altitude>
+			<heading>38.28567718858141</heading>
+			<tilt>57.79879760597483</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>125.8063984816727</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9592946167479,38.89701178244849,2984.638790158746</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="008ACC7A643DA7B78211">
+		<name>Buckley Water</name>
+		<LookAt>
+			<longitude>-106.9657243452134</longitude>
+			<latitude>38.89568905790898</latitude>
+			<altitude>2833.18981013753</altitude>
+			<heading>38.28063466110579</heading>
+			<tilt>57.79836614329857</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>69.07993096541759</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.959275611723,38.89706505278379,0 -106.9600040830563,38.89663512198722,0 -106.9603805413679,38.89607051008209,0 -106.9603778916783,38.89569452850794,0 -106.9609453236161,38.89566688037503,0 -106.9657917757169,38.89562502982486,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0CCE79FC2B3DA7B7BA36">
+		<name>Buckley Water Drain</name>
+		<LookAt>
+			<longitude>-106.9657243452134</longitude>
+			<latitude>38.89568905790898</latitude>
+			<altitude>2833.18981013753</altitude>
+			<heading>38.28063466110579</heading>
+			<tilt>57.79836614329857</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>69.07993096541759</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9657987984103,38.8956217544387,2832.801533555146</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="01C9ACF4D63DA7B7F444">
+		<name>Buckley Air Drain</name>
+		<LookAt>
+			<longitude>-106.9657243452134</longitude>
+			<latitude>38.89568905790898</latitude>
+			<altitude>2833.18981013753</altitude>
+			<heading>38.28063466110579</heading>
+			<tilt>57.79836614329857</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>69.07993096541759</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9658048413325,38.89561208180322,2832.864272712245</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="067F4D633B3DA7B89CF4">
+		<name>Buckley Air</name>
+		<LookAt>
+			<longitude>-106.9593404980745</longitude>
+			<latitude>38.89711036369414</latitude>
+			<altitude>2982.748466949336</altitude>
+			<heading>38.28550701406945</heading>
+			<tilt>57.7982149043623</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>49.19802978581174</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_026428FA773DA743DFC3</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9657986739673,38.89561758280674,0 -106.9603664993971,38.89568202198919,0 -106.9603617602032,38.89608152555695,0 -106.9599992717343,38.89662002267417,0 -106.959237777757,38.89707548906805,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0BD416497C3DA7B944AB">
+		<name>Ruby Steep Air Isolation</name>
+		<LookAt>
+			<longitude>-106.941470905065</longitude>
+			<latitude>38.89344508575547</latitude>
+			<altitude>3239.648532263892</altitude>
+			<heading>38.29937600590923</heading>
+			<tilt>57.79934008676014</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>197.1347535945825</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9418802058244,38.89276945857515,3263.56410794339</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0D35C7BAE83DA7B97C2F">
+		<name>Ruby Steep Water Isolation</name>
+		<LookAt>
+			<longitude>-106.941470905065</longitude>
+			<latitude>38.89344508575547</latitude>
+			<altitude>3239.648532263892</altitude>
+			<heading>38.29937600590923</heading>
+			<tilt>57.79934008676014</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>197.1347535945825</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9418862771888,38.89276798724993,3263.66980572416</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0CDD7E45913DA7B9F21C">
+		<name>East River Water Isolation</name>
+		<LookAt>
+			<longitude>-106.9417950709403</longitude>
+			<latitude>38.89642884213099</latitude>
+			<altitude>3144.600743356081</altitude>
+			<heading>34.89629808932715</heading>
+			<tilt>5.149259409012893</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>66.58926034381693</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.941714801367,38.89636835653261,3145.040915858029</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0E1F3C4DAD3DA7BA22EC">
+		<name>East River Water LSD at Isolation</name>
+		<LookAt>
+			<longitude>-106.9417950709403</longitude>
+			<latitude>38.89642884213099</latitude>
+			<altitude>3144.600743356081</altitude>
+			<heading>34.89629808932715</heading>
+			<tilt>5.149259409012893</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>66.58926034381693</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9417229681939,38.89636129687194,3145.221997064748</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="088F7B78DB3DA7BA65C9">
+		<name>East River Air Isolation</name>
+		<LookAt>
+			<longitude>-106.9417950709403</longitude>
+			<latitude>38.89642884213099</latitude>
+			<altitude>3144.600743356081</altitude>
+			<heading>34.89629808932715</heading>
+			<tilt>5.149259409012893</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>66.58926034381693</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9416958229786,38.89635868019735,3145.053554141502</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0AC4D419643DA7BACD5E">
+		<name>Lower Forest Queen Air Isolation</name>
+		<LookAt>
+			<longitude>-106.9417950709403</longitude>
+			<latitude>38.89642884213099</latitude>
+			<altitude>3144.600743356081</altitude>
+			<heading>34.89629808932715</heading>
+			<tilt>5.149259409012893</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>66.58926034381693</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9417499587156,38.89641953794603,3144.439630690977</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="02542432803DA7BB1648">
+		<name>Lower Forest Queen Water Isolation</name>
+		<LookAt>
+			<longitude>-106.9417950709403</longitude>
+			<latitude>38.89642884213099</latitude>
+			<altitude>3144.600743356081</altitude>
+			<heading>34.89629808932715</heading>
+			<tilt>5.149259409012893</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>66.58926034381693</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9417245361137,38.89644267492485,3143.835452201556</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0F89629BBE3DA7BB6BC4">
+		<name>Lower Forest Queen LSD at Isolation</name>
+		<LookAt>
+			<longitude>-106.9417950709403</longitude>
+			<latitude>38.89642884213099</latitude>
+			<altitude>3144.600743356081</altitude>
+			<heading>34.89629808932715</heading>
+			<tilt>5.149259409012893</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>66.58926034381693</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9417499587156,38.89641953794603,3144.439630690977</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0936EBF37A3DA7BBC740">
+		<name>Upper Paradise Air Isolation</name>
+		<LookAt>
+			<longitude>-106.9417950709403</longitude>
+			<latitude>38.89642884213099</latitude>
+			<altitude>3144.600743356081</altitude>
+			<heading>34.89629808932715</heading>
+			<tilt>5.149259409012893</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>66.58926034381693</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9417578792227,38.89639549297743,3144.911106596344</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="063084E2853DA7BC1389">
+		<name>Upper Paradise Air LSD at Isolation</name>
+		<LookAt>
+			<longitude>-106.9417950709403</longitude>
+			<latitude>38.89642884213099</latitude>
+			<altitude>3144.600743356081</altitude>
+			<heading>34.89629808932715</heading>
+			<tilt>5.149259409012893</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>66.58926034381693</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9417733072364,38.89640133901269,3144.92951985229</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0A5E6AAFBD3DA7BC6F69">
+		<name>Low Pressure Water Drain</name>
+		<LookAt>
+			<longitude>-106.9417950709403</longitude>
+			<latitude>38.89642884213099</latitude>
+			<altitude>3144.600743356081</altitude>
+			<heading>34.89629808932715</heading>
+			<tilt>5.149259409012893</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>66.58926034381693</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9417810044228,38.89636390609832,3145.692420860736</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="01771695D03DA7BCE62F">
+		<name>High Pressure Water Drain</name>
+		<LookAt>
+			<longitude>-106.9417950709403</longitude>
+			<latitude>38.89642884213099</latitude>
+			<altitude>3144.600743356081</altitude>
+			<heading>34.89629808932715</heading>
+			<tilt>5.149259409012893</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>66.58926034381693</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9417918916122,38.89637573127766,3145.654596358253</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="024E544E823DD0A40D96">
+		<name>Water Down Ruby Isolation</name>
+		<LookAt>
+			<longitude>-106.9424879324922</longitude>
+			<latitude>38.8993567131129</latitude>
+			<altitude>3117.877863793112</altitude>
+			<heading>34.89600784243927</heading>
+			<tilt>5.149301226635833</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>118.4247386935749</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9424202399281,38.89924722301105,3119.194770495213</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0A55AB906E3DD0A453FB">
+		<name>Air down Ruby Isolation</name>
+		<LookAt>
+			<longitude>-106.9424879324922</longitude>
+			<latitude>38.8993567131129</latitude>
+			<altitude>3117.877863793112</altitude>
+			<heading>34.89600784243927</heading>
+			<tilt>5.149301226635833</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>118.4247386935749</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9424040458629,38.89922516896643,3119.308291496653</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0DB51001983DD0A498C4">
+		<name>Ruby Isolation Low Spot Drain</name>
+		<LookAt>
+			<longitude>-106.9424879324922</longitude>
+			<latitude>38.8993567131129</latitude>
+			<altitude>3117.877863793112</altitude>
+			<heading>34.89600784243927</heading>
+			<tilt>5.149301226635833</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>118.4247386935749</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9424332349825,38.89924546065988,3119.166011518013</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0B25AFC7E93DD0A4F274">
+		<name>Houston Water Isolation</name>
+		<LookAt>
+			<longitude>-106.9424879324922</longitude>
+			<latitude>38.8993567131129</latitude>
+			<altitude>3117.877863793112</altitude>
+			<heading>34.89600784243927</heading>
+			<tilt>5.149301226635833</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>118.4247386935749</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9424332349825,38.89924546065988,3119.16602036098</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0A57AC655B3DD0A665D7">
+		<name>10&quot; Emergency Valve</name>
+		<LookAt>
+			<longitude>-106.9424879324922</longitude>
+			<latitude>38.8993567131129</latitude>
+			<altitude>3117.877863793112</altitude>
+			<heading>34.89600784243927</heading>
+			<tilt>5.149301226635833</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>118.4247386935749</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9424584608176,38.89917328233813,3119.303529536922</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="02B8A429503DD0A6DD6F">
+		<name>Peanut Water Drain</name>
+		<LookAt>
+			<longitude>-106.9424879324922</longitude>
+			<latitude>38.8993567131129</latitude>
+			<altitude>3117.877863793112</altitude>
+			<heading>34.89600784243927</heading>
+			<tilt>5.149301226635833</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>118.4247386935749</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9425699193216,38.89923616418533,3118.739873706045</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="02F18EBCCA3DD0A70E14">
+		<name>Peanut Air Drain</name>
+		<LookAt>
+			<longitude>-106.9424879324922</longitude>
+			<latitude>38.8993567131129</latitude>
+			<altitude>3117.877863793112</altitude>
+			<heading>34.89600784243927</heading>
+			<tilt>5.149301226635833</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>118.4247386935749</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.94259552853,38.89921525376243,3118.886419579565</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="05772095CE3DD561CFE8">
+		<name>High Pressure Drain</name>
+		<LookAt>
+			<longitude>-106.9426561846652</longitude>
+			<latitude>38.89933945937362</latitude>
+			<altitude>3117.386949692156</altitude>
+			<heading>34.89590218795917</heading>
+			<tilt>5.149301624250025</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>118.9176451103594</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9424903350751,38.89917000454533,3119.251701152672</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="07E405A2F63DD5624E44">
+		<name>Air Down Houston Isolation</name>
+		<LookAt>
+			<longitude>-106.9426561846652</longitude>
+			<latitude>38.89933945937362</latitude>
+			<altitude>3117.386949692156</altitude>
+			<heading>34.89590218795917</heading>
+			<tilt>5.149301624250025</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>118.9176451103594</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9425214172904,38.89927090092952,3118.632667501249</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="06593F79EF3DD563A99C">
+		<name>Upper Park Air Isolation</name>
+		<LookAt>
+			<longitude>-106.9489164728116</longitude>
+			<latitude>38.89678084009505</latitude>
+			<altitude>3127.816939911543</altitude>
+			<heading>34.89209801405554</heading>
+			<tilt>5.149401671708057</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>242.9324151615219</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9489210347671,38.89657241696631,3132.413349273667</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="07A677F63F3DD5642163">
+		<name>Peanut Air Isolation</name>
+		<LookAt>
+			<longitude>-106.9489164728116</longitude>
+			<latitude>38.89678084009505</latitude>
+			<altitude>3127.816939911543</altitude>
+			<heading>34.89209801405554</heading>
+			<tilt>5.149401671708057</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>242.9324151615219</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.948877438658,38.89653974584974,3133.203469227798</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="04854A45493DD5645180">
+		<name>Keystone Air Isolation</name>
+		<LookAt>
+			<longitude>-106.9489164728116</longitude>
+			<latitude>38.89678084009505</latitude>
+			<altitude>3127.816939911543</altitude>
+			<heading>34.89209801405554</heading>
+			<tilt>5.149401671708057</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>242.9324151615219</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9488587594877,38.89650291776211,3133.885950080575</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="08AC2CC3F43DD5647F4E">
+		<name>Upper Park Water Isolation</name>
+		<LookAt>
+			<longitude>-106.9489164728116</longitude>
+			<latitude>38.89678084009505</latitude>
+			<altitude>3127.816939911543</altitude>
+			<heading>34.89209801405554</heading>
+			<tilt>5.149401671708057</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>242.9324151615219</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9491042024964,38.89646888745364,3131.900445464928</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="016FD154933DD564CCCC">
+		<name>Peanut Water Isolation</name>
+		<LookAt>
+			<longitude>-106.9489164728116</longitude>
+			<latitude>38.89678084009505</latitude>
+			<altitude>3127.816939911543</altitude>
+			<heading>34.89209801405554</heading>
+			<tilt>5.149401671708057</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>242.9324151615219</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9490682152401,38.89642565096765,3133.129200012878</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="004A56FC713DD5650A64">
+		<name>Peanut Water Drain</name>
+		<LookAt>
+			<longitude>-106.9489164728116</longitude>
+			<latitude>38.89678084009505</latitude>
+			<altitude>3127.816939911543</altitude>
+			<heading>34.89209801405554</heading>
+			<tilt>5.149401671708057</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>242.9324151615219</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9490123749557,38.89649761069058,3133.247723510961</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0C588743073DD5654EF3">
+		<name>Upper Park Water Drain</name>
+		<LookAt>
+			<longitude>-106.9489164728116</longitude>
+			<latitude>38.89678084009505</latitude>
+			<altitude>3127.816939911543</altitude>
+			<heading>34.89209801405554</heading>
+			<tilt>5.149401671708057</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>242.9324151615219</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9489924316797,38.89639941184404,3134.204184977655</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="01F6364AF23DD5658FA9">
+		<name>Keystone Air Drain</name>
+		<LookAt>
+			<longitude>-106.9489164728116</longitude>
+			<latitude>38.89678084009505</latitude>
+			<altitude>3127.816939911543</altitude>
+			<heading>34.89209801405554</heading>
+			<tilt>5.149401671708057</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>242.9324151615219</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9489297522918,38.8964830288926,3133.886964482502</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="09A11A79F43DD5666C7F">
+		<name>Weather Station Flats Air Drain</name>
+		<LookAt>
+			<longitude>-106.9529766678831</longitude>
+			<latitude>38.8963435782501</latitude>
+			<altitude>3082.437953210068</altitude>
+			<heading>34.88974715315057</heading>
+			<tilt>5.14933489128832</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>160.1536074593059</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9528525693977,38.89597349499747,3084.264888143889</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0E88E5AC2B3DD566A30E">
+		<name>Weather Station Flats Water Drain</name>
+		<LookAt>
+			<longitude>-106.9529766678831</longitude>
+			<latitude>38.8963435782501</latitude>
+			<altitude>3082.437953210068</altitude>
+			<heading>34.88974715315057</heading>
+			<tilt>5.14933489128832</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>160.1536074593059</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9528197598721,38.89593739449698,3084.624397696893</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0482BD8D8E3DD56D8AA3">
+		<name>Lower Canaan Air</name>
+		<LookAt>
+			<longitude>-106.9385014860624</longitude>
+			<latitude>38.89893665507984</latitude>
+			<altitude>3074.197289198343</altitude>
+			<heading>34.8981105441869</heading>
+			<tilt>5.149455435509307</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>309.5743408054842</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_026428FA773DA743DFC3</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9390670994967,38.89850825129739,0 -106.9386051982481,38.89929525196487,0 -106.9382476435781,38.90018737074845,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0BFCD913E53DD56DDD5B">
+		<name>Lower Canaan Water</name>
+		<LookAt>
+			<longitude>-106.9380284067731</longitude>
+			<latitude>38.90007905825592</latitude>
+			<altitude>3046.62743577129</altitude>
+			<heading>34.89840761949263</heading>
+			<tilt>5.149477768614889</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>337.2559271608407</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FACAD424A3DA72FCEEF</styleUrl>
+		<LineString>
+			<coordinates>
+				-106.9390667171305,38.89846682329151,0 -106.938569590872,38.89929943572367,0 -106.938218344177,38.90019271662147,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="05B79D147F3DD56E0F2F">
+		<name>Lower Canaan Air Drain</name>
+		<LookAt>
+			<longitude>-106.9380284067731</longitude>
+			<latitude>38.90007905825592</latitude>
+			<altitude>3046.62743577129</altitude>
+			<heading>34.89840761949263</heading>
+			<tilt>5.149477768614889</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>337.2559271608407</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0FABB665C33DA73C69E0</styleUrl>
+		<Point>
+			<coordinates>-106.9382541179549,38.90018836002614,3048.383883940299</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0598AD427F3DD56E4398">
+		<name>Lower Canaan Water Drain</name>
+		<LookAt>
+			<longitude>-106.9380284067731</longitude>
+			<latitude>38.90007905825592</latitude>
+			<altitude>3046.62743577129</altitude>
+			<heading>34.89840761949263</heading>
+			<tilt>5.149477768614889</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>337.2559271608407</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_028486B4C63DA729EF7F</styleUrl>
+		<Point>
+			<coordinates>-106.9382022131994,38.90018166107468,3047.362575621954</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>
