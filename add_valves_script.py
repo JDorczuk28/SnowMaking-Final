@@ -1,4 +1,4 @@
-from app import app, db, Valve
+from SnowMakingApp import app, db, Valve
 
 valves = [
     {
