@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 import io
 import csv
 import pandas as pd
-from flask_login import LoginManager, UserMixin, login_user, logout_user, login_required, current_user, login_manager
+from flask_login import LoginManager, UserMixin, login_user, logout_user, login_required, current_user
 from flask_socketio import SocketIO
 app = Flask(__name__, static_url_path='/static')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///capstone0.sqlite'
