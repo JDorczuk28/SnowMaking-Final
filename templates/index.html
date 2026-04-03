@@ -12,7 +12,6 @@
    <div class="login-container">
     {% if current_user.is_authenticated %}
         <span class="user-name">User: {{ current_user.name }}</span>
-
         {% if current_user.is_admin %}
             <a href="{{ url_for('manage_users') }}" class="admin-link">Admin Panel</a>
         {% endif %}
@@ -24,24 +23,77 @@
     </div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
 
     <script>
         window.valveData = {{ valves | tojson }};
     </script>
 
+    <script>
+        window.isAdmin = {{ (current_user.is_admin) | tojson if current_user.is_authenticated else false }};
+    </script>
+
     <script src="{{ url_for('static', filename='load_map.js') }}"></script>
+    <script src="{{ url_for('static', filename='edit_coords.js') }}"></script>
     <script src="{{ url_for('static', filename='valves.js') }}"></script>
     <script src="{{ url_for('static', filename='valve_cluster.js') }}"></script>
     <script src="{{ url_for('static', filename='pipe.js') }}"></script>
     <script src="{{ url_for('static', filename='history.js') }}"></script>
+    <script src="{{ url_for('static', filename='DownloadCSV.js') }}"></script>
+    <script src="{{ url_for('static', filename='warnings.js') }}"></script>
+
 
 
     <button id="history_Button" onclick="getHistory()">History</button>
 
-    <div id="history-Panel" class="history-Panel">
-        <button class="dropbtn" onclick="valveDropdown()"></button>
-        <div id="History-List"></div>
+    <div id="history-panel" class="history-panel">
+        <div class="history-control">
+            <label for="valveFilter">Valve</label>
+            <select id="valveFilter" onchange="filterValves()">
+                <option value="all">All</option>
+                {% for valve in valves %}
+                    <option value="{{ valve.name }}">{{ valve.name }}</option>
+                {% endfor %}
+            </select>
+            <div id="filterOptions-State">
+                <label>Filter State Options...</label>
+                <div>
+                    <input type="radio" name="filter-state" value="all" checked onchange="filterValves()">
+                    <label>All</label>
+                </div>
+                <div>
+                    <input type="radio" name="filter-state" value="Open" onchange="filterValves()">
+                    <label>Open</label>
+                </div>
+                <div>
+                    <input type="radio" name="filter-state" value="Closed" onchange="filterValves()">
+                    <label>Closed</label>
+                </div>
+                <div>
+                    <input type="radio" name="filter-state" value="Cracked" onchange="filterValves()">
+                    <label>Cracked</label>
+                </div>
+            </div>
+            <div id="filerOptions-Type">
+                <label>Filter Type Options...</label>
+                <div>
+                    <input type="radio" name="filter-type" value="all" checked onchange="filterValves()">
+                    <label>All</label>
+                </div>
+                <div>
+                    <input type="radio" name="filter-type" value="air" onchange="filterValves()">
+                    <label>Air</label>
+                </div>
+                <div>
+                    <input type="radio" name="filter-type" value="water" onchange="filterValves()">
+                    <label>Water</label>
+                </div>
+            </div>
+            <a href="{{ url_for('download_CSV') }}">Download CSV</a>
+            <div id="history-list"></div>
+        </div>
     </div>
+
 
     <div id="map-legend" style="
     position: absolute;

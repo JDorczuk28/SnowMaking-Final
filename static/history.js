@@ -1,5 +1,4 @@
 async function getHistory(){
-    console.log("hello")
     const panel = document.getElementById("history-Panel")
     const historyList = document.getElementById("History-List")
     const isOpen = panel.style.display === "block"
@@ -14,5 +13,4 @@ async function getHistory(){
     historyList.innerHTML = data.history.map(h => `<p>${h.valve_name.toUpperCase()} - ${h.type.toUpperCase()} - ${h.state} - ${h.time} - by: ${h.user}</p>`).join("")
     panel.style.display = "block"
     console.log(historyList)
-
 }
